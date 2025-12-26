@@ -1,31 +1,3 @@
-[00:00:00.677] Server  LOG      ✓ Ready in 486ms
-[00:00:03.155] Server  ERROR    ⨯ ./src/app/layout.tsx:2:1
-Module not found: Can't resolve './globals.css'
-  1 | // app/layout.tsx
-> 2 | import "./globals.css";
-    | ^^^^^^^^^^^^^^^^^^^^^^^
-  3 |
-  4 | export default function RootLayout({
-  5 |   children,
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:07.383] Server  ERROR    ⨯ ./src/app/layout.tsx:2:1
-Module not found: Can't resolve './globals.css'
-  1 | // app/layout.tsx
-> 2 | import "./globals.css";
-    | ^^^^^^^^^^^^^^^^^^^^^^^
-  3 |
-  4 | export default function RootLayout({
-  5 |   children,
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:00:55.580] Server  LOG      ✓ Compiled in 525ms
-[00:01:04.910] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:00.696] Server  LOG      ✓ Ready in 465ms
+[00:00:03.254] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:03.332] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

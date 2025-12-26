@@ -3,11 +3,12 @@
 import { useState } from 'react';
 import { ImageWithFallback } from './components/backup/ImageWithFallback.tsx';
 import { Menu, Shield, Dumbbell, Users, Clock, MapPin, Phone, Mail, ChevronRight, Award, Target, Zap, Star } from 'lucide-react';
-import logo from './components/images/0D74BBA2CSD-logo.png';
-import sidImage from './components/images/sid.png';
-import mylesImage from './components/images/myles.png';
-import domImage from './components/images/dom.png';
-import supportMissionImage from './components/images/group.png';
+import Image from 'next/image';
+import logo from './public/images/0D74BBA2CSD-logo.png';
+import sidImage from './public/images/sid.png';
+import mylesImage from './public/images/myles.png';
+import domImage from './public/images/dom.png';
+import supportMissionImage from './public/images/group.png';
 
 export default function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -83,29 +84,28 @@ export default function App() {
     }
   ];
 
-  const trainers = [
-    {
-      name: "Sid Skrob",
-      specialty: "MMA & Brazilian Jiu-Jitsu",
-      credentials: "Black Belt BJJ, 10+ years teaching experience",
-      image: sidImage
-    },
-    
-    {
-      name: "Myles Moudy",
-      specialty: "Kickboxing & MMA",
-      credentials: "Black Belt BJJ, Retired Pro MMA",
-      image: mylesImage
-    },
-    {
-      name: "Domic Delgado",
-      specialty: "Boxing & MMA",
-      credentials: "Amature Muay Thai Phenom",
-      image: domImage
-    }
-  ];
+     const trainers = [
+  {
+    name: "Sid Skrob",
+    specialty: "MMA & Brazilian Jiu-Jitsu",
+    credentials: "Black Belt BJJ, 10+ years teaching experience",
+    image: "/images/sid.png",
+  },
+  {
+    name: "Myles Moudy",
+    specialty: "Kickboxing & MMA",
+    credentials: "Black Belt BJJ, Retired Pro MMA",
+    image: "/images/myles.png",
+  },
+  {
+    name: "Domic Delgado",
+    specialty: "Boxing & MMA",
+    credentials: "Amateur Muay Thai Phenom",
+    image: "/images/dom.png",
+  },
+];
 
-  const membershipPlans = [
+    const membershipPlans = [
     {
       name: "Adults",
       price: "$125",
@@ -163,7 +163,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center gap-3">
-              <img src={logo} alt="CSD Logo" className="w-12 h-12" />
+              <Image src={logo} alt="CSD Logo" className="w-12 h-12" />
               <div>
                 <div className="font-bold">Community-Self-Defense</div>
                 <div className="text-xs text-gray-400">CSD</div>
