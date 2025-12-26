@@ -51,10 +51,6 @@ export default function App() {
       name: "KIDS MUAY THAI",
       image: "https://images.unsplash.com/photo-1635962005741-a9c4904d110b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWRzJTIwbWFydGlhbCUyMGFydHN8ZW58MXx8fHwxNzY2MTgwNDkxfDA&ixlib=rb-4.1.0&q=80&w=1080"
     },
-    {
-      name: "SELF DEFENSE",
-      image: "https://images.unsplash.com/photo-1765303206345-30d16b502d64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzZWxmJTIwZGVmZW5zZSUyMHRyYWluaW5nfGVufDF8fHx8MTc2NjIxNzU4MXww&ixlib=rb-4.1.0&q=80&w=1080"
-    }
   ];
 
   const classes = [
@@ -306,7 +302,7 @@ export default function App() {
               <div className="bg-[hsl(217,63%,47%)] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Award className="w-8 h-8" />
               </div>
-              <h3 className="text-xl mb-4">Expert Instruction</h3>
+              <h3 className="text-xl mb-4">Expert Instructors</h3>
               <p className="text-gray-400">
                 Train with certified professionals who have competed at the highest levels.
               </p>
@@ -374,6 +370,7 @@ export default function App() {
             <p className="text-gray-600 max-w-2xl mx-auto">
               Choose the plan that fits your training goals and schedule.
             </p>
+            <p className="text-gray-600 max-w-2xl mx-auto">"All payments done in person at set location."</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -483,7 +480,7 @@ export default function App() {
                 </div>
                 <div>
                   <h3 className="text-xl mb-2">Location</h3>
-                  <p className="text-gray-600">15201 BEACH BLVD, STE C<br />WESTMINSTER, CA 92683</p>
+                  <p className="text-gray-600"><a href="https://maps.app.goo.gl/rVCyfvjUAkv3aJaH8" className="hover:text-[hsl(217,63%,47%)]">15201 BEACH BLVD, STE C<br />WESTMINSTER, CA 92683</a></p>
                 </div>
               </div>
 
@@ -494,9 +491,9 @@ export default function App() {
                 <div>
                   <h3 className="text-xl mb-2">Phone</h3>
                   <h2 className="text-x1 mb-2">Header-Instructor: Sid Skrob</h2>
-                  <p className="text-gray-600">(949)-795-1110</p>
+                  <a href="tel:9497951110" className="text-gray-600 hover:text-[hsl(217,63%,47%)]">(949)-795-1110</a>
                   <h2 className="text-x1 mb-2">Co-Instructor: Myles Moudy</h2>
-                  <p className="text-gray-600">(714)-369-5220</p>
+                  <a href="tel:7143695220" className="text-gray-600 hover:text-[hsl(217,63%,47%)]">(714)-369-5220</a>
                 </div>
               </div>
 
@@ -506,7 +503,7 @@ export default function App() {
                 </div>
                 <div>
                   <h3 className="text-xl mb-2">Email</h3>
-                  <p className="text-gray-600">CSDONLINE2023@GMAIL.COM</p>
+                  <a href= "mailto:CSDONLINE2023@GMAIL.COM" className="text-gray-600 hover:text-[hsl(217,63%,47%)]">CSDONLINE2023@GMAIL.COM</a>
                 </div>
               </div>
 
