@@ -4,11 +4,11 @@ import { useState } from 'react';
 import { ImageWithFallback } from './components/backup/ImageWithFallback.tsx';
 import { Menu, Shield, Dumbbell, Users, Clock, MapPin, Phone, Mail, ChevronRight, Award, Target, Zap, Star } from 'lucide-react';
 import Image from 'next/image';
-import logo from './public/images/0D74BBA2CSD-logo.png';
-import sidImage from './public/images/sid.png';
-import mylesImage from './public/images/myles.png';
-import domImage from './public/images/dom.png';
-import supportMissionImage from './public/images/group.png';
+import logo from './components/images/0D74BBA2CSD-logo.png';
+import sidImage from './components/images/sid.png';
+import mylesImage from './components/images/myles.png';
+import domImage from './components/images/dom.png';
+import supportMissionImage from './components/images/group.png';
 
 export default function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -85,19 +85,19 @@ export default function App() {
     name: "Sid Skrob",
     specialty: "MMA & Brazilian Jiu-Jitsu",
     credentials: "Black Belt BJJ, 10+ years teaching experience",
-    image: "/images/sid.png",
+    image: sidImage,
   },
   {
     name: "Myles Moudy",
     specialty: "Kickboxing & MMA",
     credentials: "Black Belt BJJ, Retired Pro MMA",
-    image: "/images/myles.png",
+    image: mylesImage,
   },
   {
     name: "Domic Delgado",
     specialty: "Boxing & MMA",
     credentials: "Amateur Muay Thai Phenom",
-    image: "/images/dom.png",
+    image: domImage,
   },
 ];
 
@@ -345,10 +345,11 @@ export default function App() {
             {trainers.map((trainer, index) => (
               <div key={index} className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
                 <div className="relative h-80">
-                  <ImageWithFallback
+                  <Image
                     src={trainer.image}
                     alt={trainer.name}
-                    className="w-full h-full object-cover"
+                    fill
+                    className="object-cover"
                   />
                 </div>
                 <div className="p-6">
@@ -420,10 +421,10 @@ export default function App() {
 
           {/* Community Image */}
           <div className="mb-12 rounded-lg overflow-hidden shadow-xl">
-            <img 
+            <Image
               src={supportMissionImage} 
               alt="Community Self Defense Family" 
-              className="w-full h-auto"
+              className="w-full h-auto object-cover"
             />
           </div>
 
@@ -576,7 +577,7 @@ export default function App() {
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <img src={logo} alt="CSD Logo" className="w-12 h-12" />
+               <Image src={logo} alt="CSD Logo" className="w-12 h-12" />
                 <div>
                   <div>CSD</div>
                   <div className="text-xs text-gray-400">Community-Self-Defense</div>
