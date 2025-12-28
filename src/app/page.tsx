@@ -94,7 +94,7 @@ export default function App() {
     image: mylesImage,
   },
   {
-    name: "Domic Delgado",
+    name: "Dominic Delgado",
     specialty: "Boxing & MMA",
     credentials: "Amateur Muay Thai Phenom",
     image: domImage,
