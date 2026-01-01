@@ -1,9 +1,14 @@
-[00:00:01.311] Server  LOG      ✓ Ready in 833ms
-[00:00:02.120] Server  WARN     ⚠ Cross origin request detected from 192.168.1.212 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
-Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-[00:00:05.193] Server  LOG      ○ Compiling / ...
-[00:00:06.306] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:37.989] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:44.181] Browser WARN    Image with src "/_next/static/media/myles.2e3b5e11.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:44.182] Browser WARN    Image with src "/_next/static/media/dom.e481dfbe.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:44.182] Browser WARN    Image with src "/_next/static/media/sid.7043be98.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:01.752] Server  LOG      ✓ Ready in 1191ms
+[00:00:08.851] Server  LOG      ○ Compiling / ...
+[00:00:10.408] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:12.235] Browser WARN    Image with src "/_next/static/media/myles.2e3b5e11.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:12.235] Browser WARN    Image with src "/_next/static/media/dom.e481dfbe.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:12.235] Browser WARN    Image with src "/_next/static/media/sid.7043be98.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:15.903] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:16.949] Browser WARN    Image with src "/_next/static/media/myles.2e3b5e11.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:16.949] Browser WARN    Image with src "/_next/static/media/dom.e481dfbe.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:16.949] Browser WARN    Image with src "/_next/static/media/sid.7043be98.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:22.173] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:23.331] Browser WARN    Image with src "/_next/static/media/myles.2e3b5e11.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:23.331] Browser WARN    Image with src "/_next/static/media/dom.e481dfbe.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:23.331] Browser WARN    Image with src "/_next/static/media/sid.7043be98.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
