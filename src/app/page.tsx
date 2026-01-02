@@ -164,7 +164,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center gap-3">
-              <img src={logo} alt="CSD Logo" className="w-12 h-12" />
+            <Image src={logo} alt="CSD Logo" width={48} height={48} />
               <div>
                 <div className="font-bold">Community-Self-Defense</div>
                 <div className="text-xs text-gray-400">CSD</div>
@@ -424,7 +424,7 @@ export default function App() {
 
           {/* Community Image */}
           <div className="mb-12 rounded-lg overflow-hidden shadow-xl">
-            <img 
+            <Image 
               src={supportMissionImage} 
               alt="Community Self Defense Family" 
               className="w-full h-auto"
@@ -459,9 +459,13 @@ export default function App() {
             <a href ="https://donate.stripe.com/28E00bgM6eDm6bc610cMM00" className="bg-[hsl(217,63%,47%)] hover:bg-[hsl(217,63%,42%)] text-white px-8 py-4 rounded-lg transition-colors">
               Make a Donation
             </a>
-            <button className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 rounded-lg transition-colors">
+
+{/* Possible future sponsor use */}
+
+{/* <button className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 rounded-lg transition-colors">
               Become a Sponsor
-            </button>
+            </button> */ }
+
           </div>
           
         </div>
@@ -484,7 +488,7 @@ export default function App() {
                 </div>
                 <div>
                   <h3 className="text-xl mb-2">Location</h3>
-                  <p className="text-gray-600">15201 BEACH BLVD, STE C<br />WESTMINSTER, CA 92683</p>
+                  <a href="https://maps.app.goo.gl/AJfB2LteKfkjThHWA" className="text-gray-600 hover:text-blue-900">15201 BEACH BLVD, STE C<br />WESTMINSTER, CA 92683</a>
                 </div>
               </div>
 
@@ -494,10 +498,10 @@ export default function App() {
                 </div>
                 <div>
                   <h3 className="text-xl mb-2">Phone</h3>
-                  <h2 className="text-x1 mb-2">Header-Instructor: Sid Skrob</h2>
-                  <p className="text-gray-600">(949)-795-1110</p>
-                  <h2 className="text-x1 mb-2">Co-Instructor: Myles Moudy</h2>
-                  <p className="text-gray-600">(714)-369-5220</p>
+                  <h2 className="text-xl mb-2">Header-Instructor: Sid Skrob</h2>
+                  <a href="tel:19497951110" className="text-gray-600 hover:text-blue-900">(949)-795-1110</a>
+                  <h2 className="text-xl mb-2">Co-Instructor: Myles Moudy</h2>
+                  <a href="tel:17143695220" className="text-gray-600 hover:text-blue-900">(714)-369-5220</a>
                 </div>
               </div>
 
@@ -507,7 +511,7 @@ export default function App() {
                 </div>
                 <div>
                   <h3 className="text-xl mb-2">Email</h3>
-                  <p className="text-gray-600">CSDONLINE2023@GMAIL.COM</p>
+                  <a href ="mailto:CSDONLINE2023@GMAIL.COM "className="text-gray-600 hover:text-blue-900">CSDONLINE2023@GMAIL.COM</a>
                 </div>
               </div>
 
@@ -580,7 +584,7 @@ export default function App() {
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <img src={logo} alt="CSD Logo" className="w-12 h-12" />
+                <Image src={logo} alt="CSD Logo" width={48} height={48} />
                 <div>
                   <div>CSD</div>
                   <div className="text-xs text-gray-400">Community-Self-Defense</div>

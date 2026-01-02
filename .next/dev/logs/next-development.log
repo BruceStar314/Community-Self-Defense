@@ -1,3 +1,123 @@
-[00:00:00.596] Server  LOG      ✓ Ready in 386ms
-[00:00:04.909] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:10.544] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:00.567] Server  LOG      ✓ Ready in 371ms
+[00:00:05.193] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:11.934] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:39.848] Server  LOG      ✓ Compiled in 56ms
+[00:03:50.073] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:13.064] Server  LOG      ✓ Compiled in 42ms
+[00:08:14.730] Server  LOG      ✓ Compiled in 47ms
+[00:09:11.854] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:42.231] Server  LOG      ✓ Compiled in 49ms
+[00:09:48.464] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:04.773] Server  LOG      ✓ Compiled in 45ms
+[00:10:09.833] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:11:46.178] Server  LOG      ✓ Compiled in 41ms
+[00:11:55.329] Server  LOG      ✓ Compiled in 45ms
+[00:12:00.796] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:14.830] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:13:53.071] Server  LOG      ✓ Compiled in 47ms
+[00:13:59.152] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:00.226] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:03.278] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:04.771] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:22.741] Server  LOG      ✓ Compiled in 39ms
+[00:14:29.188] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:36.677] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:58.742] Server  LOG      ✓ Compiled in 41ms
+[00:15:25.162] Server  LOG      ✓ Compiled in 63ms
+[00:16:47.051] Server  LOG      ✓ Compiled in 48ms
+[00:16:48.068] Browser ERROR   ./src/app/page.tsx:502:109
+Parsing ecmascript source code failed
+  500 |                   <h3 className="text-xl mb-2">Phone</h3>
+  501 |                   <h2 className="text-xl mb-2">Header-Instructor: Sid Skrob</h2>
+> 502 |                   <a href="tel:19497951110" className="text-gray-600 hover:text-blue-900">(949)-795-1110</p>
+      |                                                                                                             ^
+> 503 |                   <h2 className="text-xl mb-2">Co-Instructor: Myles Moudy</h2>
+      | ^^^^^^^^^^^^^^^^^^^
+  504 |                   <p className="text-gray-600">(714)-369-5220</p>
+  505 |                 </div>
+  506 |               </div>
+
+Expected '</', got 'jsx text (
+                  )'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[00:17:16.240] Browser ERROR   ./src/app/page.tsx:502:109
+Parsing ecmascript source code failed
+  500 |                   <h3 className="text-xl mb-2">Phone</h3>
+  501 |                   <h2 className="text-xl mb-2">Header-Instructor: Sid Skrob</h2>
+> 502 |                   <a href="tel:19497951110" className="text-gray-600 hover:text-blue-900">(949)-795-1110</p>
+      |                                                                                                             ^
+> 503 |                   <h2 className="text-xl mb-2">Co-Instructor: Myles Moudy</h2>
+      | ^^^^^^^^^^^^^^^^^^^
+  504 |                   <a href="tel:17143695220"className="text-gray-600">(714)-369-5220</a>
+  505 |                 </div>
+  506 |               </div>
+
+Expected '</', got 'jsx text (
+                  )'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[00:17:30.922] Browser ERROR   ./src/app/page.tsx:502:109
+Parsing ecmascript source code failed
+  500 |                   <h3 className="text-xl mb-2">Phone</h3>
+  501 |                   <h2 className="text-xl mb-2">Header-Instructor: Sid Skrob</h2>
+> 502 |                   <a href="tel:19497951110" className="text-gray-600 hover:text-blue-900">(949)-795-1110</p>
+      |                                                                                                             ^
+> 503 |                   <h2 className="text-xl mb-2">Co-Instructor: Myles Moudy</h2>
+      | ^^^^^^^^^^^^^^^^^^^
+  504 |                   <a href="tel:17143695220" className="text-gray-600 hover:text-blue-900">(714)-369-5220</a>
+  505 |                 </div>
+  506 |               </div>
+
+Expected '</', got 'jsx text (
+                  )'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[00:17:41.279] Server  LOG      ✓ Compiled in 38ms
+[00:18:32.078] Server  LOG      ✓ Compiled in 38ms
+[00:18:32.180] Browser ERROR   ./src/app/page.tsx:514:132
+Parsing ecmascript source code failed
+  512 |                 <div>
+  513 |                   <h3 className="text-xl mb-2">Email</h3>
+> 514 |                   <a href ="mail:CSDONLINE2023@GMAIL.COM "className="text-gray-600 hover:text-blue-900">CSDONLINE2023@GMAIL.COM</p>
+      |                                                                                                                                    ^
+> 515 |                 </div>
+      | ^^^^^^^^^^^^^^^^^
+  516 |               </div>
+  517 |
+  518 |               <div className="flex items-start gap-4">
+
+Expected '</', got 'jsx text (
+                )'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[00:19:00.122] Server  LOG      ✓ Compiled in 37ms
+[00:19:20.312] Server  LOG      ✓ Compiled in 40ms
