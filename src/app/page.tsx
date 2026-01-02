@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from 'react';
+import Link from "next/link";
 import { ImageWithFallback } from './components/backup/ImageWithFallback.tsx';
 import { Menu, Shield, Dumbbell, Users, Clock, MapPin, Phone, Mail, ChevronRight, Award, Target, Zap, Star } from 'lucide-react';
 import Image from "next/image"
@@ -17,71 +18,49 @@ export default function App() {
   const programs = [
     {
       name: "BRAZILIAN JIU JITSU",
+      slug: "brazilian jiu jitsu",
       image: "https://images.unsplash.com/photo-1699464676210-48cd0449df42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxCcmF6aWxpYW4lMjBKaXUlMjBKaXRzdSUyMHRyYWluaW5nfGVufDF8fHx8MTc2NjIxNzU3OXww&ixlib=rb-4.1.0&q=80&w=1080"
     },
     {
       name: "MUAY THAI",
+      slug: "muay-thai",
       image: "https://images.unsplash.com/photo-1696454411278-a64de1369e83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxNdWF5JTIwVGhhaSUyMGtpY2tib3hpbmd8ZW58MXx8fHwxNzY2MjE3NTc5fDA&ixlib=rb-4.1.0&q=80&w=1080"
     },
     {
       name: "BOXING",
+      slug: "boxing",
       image: "https://images.unsplash.com/photo-1570312530820-d0f15f33a4a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxib3hpbmclMjB0cmFpbmluZyUyMGd5bXxlbnwxfHx8fDE3NjYxNDIxMjB8MA&ixlib=rb-4.1.0&q=80&w=1080"
     },
     {
       name: "MMA",
+      slug: "mma",
       image: "https://images.unsplash.com/photo-1688141402330-f4ed03f6bbf9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxNTUElMjBjYWdlJTIwZmlnaHRpbmd8ZW58MXx8fHwxNzY2MjE3NTgwfDA&ixlib=rb-4.1.0&q=80&w=1080"
     },
     {
       name: "WRESTLING",
+      slug: "wrestling",
       image: "https://images.unsplash.com/photo-1615117270691-3bc3cb65f2e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3cmVzdGxpbmclMjBncmFwcGxpbmd8ZW58MXx8fHwxNzY2MjE3NTgwfDA&ixlib=rb-4.1.0&q=80&w=1080"
     },
     {
       name: "KICKBOXING",
+      slug: "kickboxing",
       image: "https://images.unsplash.com/photo-1677184976710-0bb339946023?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWNrYm94aW5nJTIwZml0bmVzc3xlbnwxfHx8fDE3NjYyMTc1ODB8MA&ixlib=rb-4.1.0&q=80&w=1080"
     },
     {
       name: "NO GI",
+      slug: "no gi",
       image: "https://images.unsplash.com/photo-1699464676210-48cd0449df42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxCcmF6aWxpYW4lMjBKaXUlMjBKaXRzdSUyMHRyYWluaW5nfGVufDF8fHx8MTc2NjIxNzU3OXww&ixlib=rb-4.1.0&q=80&w=1080"
     },
     {
       name: "KIDS JIU JITSU",
+      slug: "kids jiu jitsu",
       image: "https://images.unsplash.com/photo-1635962005741-a9c4904d110b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWRzJTIwbWFydGlhbCUyMGFydHN8ZW58MXx8fHwxNzY2MTgwNDkxfDA&ixlib=rb-4.1.0&q=80&w=1080"
     },
     {
       name: "KIDS MUAY THAI",
+      slug: "kids muay-thai",
       image: "https://images.unsplash.com/photo-1635962005741-a9c4904d110b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWRzJTIwbWFydGlhbCUyMGFydHN8ZW58MXx8fHwxNzY2MTgwNDkxfDA&ixlib=rb-4.1.0&q=80&w=1080"
     },
-    {
-      name: "SELF DEFENSE",
-      image: "https://images.unsplash.com/photo-1765303206345-30d16b502d64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzZWxmJTIwZGVmZW5zZSUyMHRyYWluaW5nfGVufDF8fHx8MTc2NjIxNzU4MXww&ixlib=rb-4.1.0&q=80&w=1080"
-    }
-  ];
-
-  const classes = [
-    {
-      name: "MMA Fundamentals",
-      description: "Learn the core techniques of mixed martial arts including striking, grappling, and ground control.",
-      icon: Shield,
-      image: "https://images.unsplash.com/photo-1708134003412-7a05fe510a5f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxNTUElMjB0cmFpbmluZyUyMGd5bXxlbnwxfHx8fDE3NjYwMTIwNDJ8MA&ixlib=rb-4.1.0&q=80&w=1080"
-    },
-    {
-      name: "Boxing & Striking",
-      description: "Master the art of boxing with professional coaching in technique, footwork, and combinations.",
-      icon: Target,
-      image: "https://images.unsplash.com/photo-1590556409324-aa1d726e5c3c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxib3hpbmclMjBmaXRuZXNzJTIwY2xhc3N8ZW58MXx8fHwxNzY2MDEyMDQyfDA&ixlib=rb-4.1.0&q=80&w=1080"
-    },
-    {
-      name: "Kickboxing Fitness",
-      description: "High-intensity cardio workout combining kickboxing techniques with strength and conditioning.",
-      icon: Zap,
-      image: "https://images.unsplash.com/photo-1765303237614-cce413f38aec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWNrYm94aW5nJTIwdHJhaW5pbmd8ZW58MXx8fHwxNzY1OTE5NTA5fDA&ixlib=rb-4.1.0&q=80&w=1080"
-    },
-    {
-      name: "Self-Defense",
-      description: "Practical self-defense techniques for real-world situations, suitable for all skill levels.",
-      icon: Shield,
-      image: "https://images.unsplash.com/photo-1550759807-50dc0b381a1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXJ0aWFsJTIwYXJ0cyUyMGluc3RydWN0b3J8ZW58MXx8fHwxNzY1OTYxMjI5fDA&ixlib=rb-4.1.0&q=80&w=1080"
-    }
   ];
 
   const trainers = [
@@ -89,20 +68,20 @@ export default function App() {
       name: "Sid Skrob",
       specialty: "MMA & Brazilian Jiu-Jitsu",
       credentials: "Black Belt BJJ, 10+ years teaching experience",
-      image: sidImage
+      image: sidImage.src
     },
     
     {
       name: "Myles Moudy",
       specialty: "Kickboxing & MMA",
       credentials: "Black Belt BJJ, Retired Pro MMA",
-      image: mylesImage
+      image: mylesImage.src
     },
     {
       name: "Domic Delgado",
       specialty: "Boxing & MMA",
       credentials: "Amature Muay Thai Phenom",
-      image: domImage
+      image: domImage.src
     }
   ];
 
@@ -177,7 +156,7 @@ export default function App() {
               <a href="#trainers" className="hover:text-[hsl(217,63%,47%)] transition-colors">Trainers</a>
               <a href="#membership" className="hover:text-[hsl(217,63%,47%)] transition-colors">Membership</a>
               <a href="#contact" className="hover:text-[hsl(217,63%,47%)] transition-colors">Location</a>
-              <a href="#schedule" className="hover:text-[hsl(217,63%,47%)] transition-colors">Schedule</a>
+              <Link href="/schedule" className="hover:text-[hsl(217,63%,47%)] transition-colors">Schedule</Link>
               <a href="#contact" className="hover:text-[hsl(217,63%,47%)] transition-colors">Contact Us</a>
               <a href="#support" className="hover:text-[hsl(217,63%,47%)] transition-colors">Support Our Mission</a>
               <button className="bg-[hsl(217,63%,47%)] hover:bg-[hsl(217,63%,42%)] px-6 py-2 rounded transition-colors">
@@ -254,10 +233,11 @@ export default function App() {
             {/* Left Side - Program List */}
             <div className="space-y-2">
               {programs.map((program, index) => (
-                <div
+                <Link
                   key={index}
+                  href={`/programs/${program.slug}`}
                   onMouseEnter={() => setHoveredProgram(index)}
-                  className={`text-3xl md:text-4xl lg:text-5xl tracking-wider cursor-pointer transition-all duration-300 py-2 ${
+                  className={`block text-3xl md:text-4xl lg:text-5xl tracking-wider cursor-pointer transition-all duration-300 py-2 ${
                     hoveredProgram === index 
                       ? 'text-[hsl(217,63%,47%)] font-bold pl-4' 
                       : 'text-gray-400 hover:text-gray-600'
@@ -269,7 +249,7 @@ export default function App() {
                   }}
                 >
                   {program.name}
-                </div>
+                </Link>
               ))}
             </div>
 
@@ -283,9 +263,12 @@ export default function App() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
               <div className="absolute bottom-8 left-8 right-8">
                 <h3 className="text-white text-3xl mb-2">{programs[hoveredProgram].name}</h3>
-                <button className="bg-[hsl(217,63%,47%)] hover:bg-[hsl(217,63%,42%)] text-white px-6 py-2 rounded-lg transition-colors flex items-center gap-2">
+                <Link 
+                  href={`/programs/${programs[hoveredProgram].slug}`}
+                  className="bg-[hsl(217,63%,47%)] hover:bg-[hsl(217,63%,42%)] text-white px-6 py-2 rounded-lg transition-colors flex items-center gap-2"
+                >
                   Learn More <ChevronRight className="w-4 h-4" />
-                </button>
+                </Link>
               </div>
             </div>
           </div>
