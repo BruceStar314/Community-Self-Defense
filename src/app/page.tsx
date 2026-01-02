@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { ImageWithFallback } from './components/backup/ImageWithFallback.tsx';
 import { Menu, Shield, Dumbbell, Users, Clock, MapPin, Phone, Mail, ChevronRight, Award, Target, Zap, Star } from 'lucide-react';
-import Image from 'next/image';
+import Image from "next/image"
 import logo from './components/images/0D74BBA2CSD-logo.png';
 import sidImage from './components/images/sid.png';
 import mylesImage from './components/images/myles.png';
@@ -51,6 +51,10 @@ export default function App() {
       name: "KIDS MUAY THAI",
       image: "https://images.unsplash.com/photo-1635962005741-a9c4904d110b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWRzJTIwbWFydGlhbCUyMGFydHN8ZW58MXx8fHwxNzY2MTgwNDkxfDA&ixlib=rb-4.1.0&q=80&w=1080"
     },
+    {
+      name: "SELF DEFENSE",
+      image: "https://images.unsplash.com/photo-1765303206345-30d16b502d64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzZWxmJTIwZGVmZW5zZSUyMHRyYWluaW5nfGVufDF8fHx8MTc2NjIxNzU4MXww&ixlib=rb-4.1.0&q=80&w=1080"
+    }
   ];
 
   const classes = [
@@ -80,28 +84,29 @@ export default function App() {
     }
   ];
 
-     const trainers = [
-  {
-    name: "Sid Skrob",
-    specialty: "MMA & Brazilian Jiu-Jitsu",
-    credentials: "Black Belt BJJ, 10+ years teaching experience",
-    image: sidImage,
-  },
-  {
-    name: "Myles Moudy",
-    specialty: "Kickboxing & MMA",
-    credentials: "Black Belt BJJ, Retired Pro MMA",
-    image: mylesImage,
-  },
-  {
-    name: "Dominic Delgado",
-    specialty: "Boxing & MMA",
-    credentials: "Amateur Muay Thai Phenom",
-    image: domImage,
-  },
-];
+  const trainers = [
+    {
+      name: "Sid Skrob",
+      specialty: "MMA & Brazilian Jiu-Jitsu",
+      credentials: "Black Belt BJJ, 10+ years teaching experience",
+      image: sidImage
+    },
+    
+    {
+      name: "Myles Moudy",
+      specialty: "Kickboxing & MMA",
+      credentials: "Black Belt BJJ, Retired Pro MMA",
+      image: mylesImage
+    },
+    {
+      name: "Domic Delgado",
+      specialty: "Boxing & MMA",
+      credentials: "Amature Muay Thai Phenom",
+      image: domImage
+    }
+  ];
 
-    const membershipPlans = [
+  const membershipPlans = [
     {
       name: "Adults",
       price: "$125",
@@ -159,7 +164,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center gap-3">
-              <Image src={logo} alt="CSD Logo" className="w-12 h-12" />
+              <img src={logo} alt="CSD Logo" className="w-12 h-12" />
               <div>
                 <div className="font-bold">Community-Self-Defense</div>
                 <div className="text-xs text-gray-400">CSD</div>
@@ -302,7 +307,7 @@ export default function App() {
               <div className="bg-[hsl(217,63%,47%)] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Award className="w-8 h-8" />
               </div>
-              <h3 className="text-xl mb-4">Expert Instructors</h3>
+              <h3 className="text-xl mb-4">Expert Instruction</h3>
               <p className="text-gray-400">
                 Train with certified professionals who have competed at the highest levels.
               </p>
@@ -345,11 +350,10 @@ export default function App() {
             {trainers.map((trainer, index) => (
               <div key={index} className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
                 <div className="relative h-80">
-                  <Image
+                  <ImageWithFallback
                     src={trainer.image}
                     alt={trainer.name}
-                    fill
-                    className="object-cover"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-6">
@@ -371,7 +375,6 @@ export default function App() {
             <p className="text-gray-600 max-w-2xl mx-auto">
               Choose the plan that fits your training goals and schedule.
             </p>
-            <p className="text-gray-600 max-w-2xl mx-auto">"All payments done in person at set location."</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -421,10 +424,10 @@ export default function App() {
 
           {/* Community Image */}
           <div className="mb-12 rounded-lg overflow-hidden shadow-xl">
-            <Image
+            <img 
               src={supportMissionImage} 
               alt="Community Self Defense Family" 
-              className="w-full h-auto object-cover"
+              className="w-full h-auto"
             />
           </div>
 
@@ -453,9 +456,9 @@ export default function App() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-[hsl(217,63%,47%)] hover:bg-[hsl(217,63%,42%)] text-white px-8 py-4 rounded-lg transition-colors">
+            <a href ="https://donate.stripe.com/28E00bgM6eDm6bc610cMM00" className="bg-[hsl(217,63%,47%)] hover:bg-[hsl(217,63%,42%)] text-white px-8 py-4 rounded-lg transition-colors">
               Make a Donation
-            </button>
+            </a>
             <button className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 rounded-lg transition-colors">
               Become a Sponsor
             </button>
@@ -481,7 +484,7 @@ export default function App() {
                 </div>
                 <div>
                   <h3 className="text-xl mb-2">Location</h3>
-                  <p className="text-gray-600"><a href="https://maps.app.goo.gl/rVCyfvjUAkv3aJaH8" className="hover:text-[hsl(217,63%,47%)]">15201 BEACH BLVD, STE C<br />WESTMINSTER, CA 92683</a></p>
+                  <p className="text-gray-600">15201 BEACH BLVD, STE C<br />WESTMINSTER, CA 92683</p>
                 </div>
               </div>
 
@@ -492,9 +495,9 @@ export default function App() {
                 <div>
                   <h3 className="text-xl mb-2">Phone</h3>
                   <h2 className="text-x1 mb-2">Header-Instructor: Sid Skrob</h2>
-                  <a href="tel:9497951110" className="text-gray-600 hover:text-[hsl(217,63%,47%)]">(949)-795-1110</a>
+                  <p className="text-gray-600">(949)-795-1110</p>
                   <h2 className="text-x1 mb-2">Co-Instructor: Myles Moudy</h2>
-                  <a href="tel:7143695220" className="text-gray-600 hover:text-[hsl(217,63%,47%)]">(714)-369-5220</a>
+                  <p className="text-gray-600">(714)-369-5220</p>
                 </div>
               </div>
 
@@ -504,7 +507,7 @@ export default function App() {
                 </div>
                 <div>
                   <h3 className="text-xl mb-2">Email</h3>
-                  <a href= "mailto:CSDONLINE2023@GMAIL.COM" className="text-gray-600 hover:text-[hsl(217,63%,47%)]">CSDONLINE2023@GMAIL.COM</a>
+                  <p className="text-gray-600">CSDONLINE2023@GMAIL.COM</p>
                 </div>
               </div>
 
@@ -577,7 +580,7 @@ export default function App() {
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-               <Image src={logo} alt="CSD Logo" className="w-12 h-12" />
+                <img src={logo} alt="CSD Logo" className="w-12 h-12" />
                 <div>
                   <div>CSD</div>
                   <div className="text-xs text-gray-400">Community-Self-Defense</div>
