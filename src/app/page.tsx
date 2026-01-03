@@ -159,9 +159,9 @@ export default function App() {
               <Link href="/schedule" className="hover:text-[hsl(217,63%,47%)] transition-colors">Schedule</Link>
               <a href="#contact" className="hover:text-[hsl(217,63%,47%)] transition-colors">Contact Us</a>
               <a href="#support" className="hover:text-[hsl(217,63%,47%)] transition-colors">Support Our Mission</a>
-              <button className="bg-[hsl(217,63%,47%)] hover:bg-[hsl(217,63%,42%)] px-6 py-2 rounded transition-colors">
+              <a href="#contact" className="bg-[hsl(217,63%,47%)] hover:bg-[hsl(217,63%,42%)] px-6 py-2 rounded transition-colors">
                 Join Now
-              </button>
+              </a>
             </div>
 
             {/* Mobile Menu Button */}
@@ -182,9 +182,9 @@ export default function App() {
               <a href="#contact" className="hover:text-[hsl(217,63%,47%)] transition-colors">Location</a>
               <a href="#schedule" className="hover:text-[hsl(217,63%,47%)] transition-colors">Schedule</a>
               <a href="#support" className="hover:text-[hsl(217,63%,47%)] transition-colors">Support Our Mission</a>
-              <button className="bg-[hsl(217,63%,47%)] hover:bg-[hsl(217,63%,42%)] px-6 py-2 rounded transition-colors w-full">
+              <a href="#contact" className="bg-[hsl(217,63%,47%)] hover:bg-[hsl(217,63%,42%)] px-6 py-2 rounded transition-colors w-full">
                 Join Now
-              </button>
+              </a>
             </div>
           )}
         </div>
@@ -209,13 +209,13 @@ export default function App() {
           More than self-defense. A community that trains, supports, and grows together.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-[hsl(217,63%,47%)] hover:bg-[hsl(217,63%,42%)] px-8 py-4 rounded-lg transition-colors flex items-center justify-center gap-2">
+            <a href="#contact" className="bg-[hsl(217,63%,47%)] hover:bg-[hsl(217,63%,42%)] px-8 py-4 rounded-lg transition-colors flex items-center justify-center gap-2">
               Start Free Trial
               <ChevronRight className="w-5 h-5" />
-            </button>
-            <button className="bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 px-8 py-4 rounded-lg transition-colors">
+            </a>
+            <a href="https://www.instagram.com/community_self_defense/" className="bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 px-8 py-4 rounded-lg transition-colors">
               Watch Classes
-            </button>
+            </a>
           </div>
         </div>
       </section>
