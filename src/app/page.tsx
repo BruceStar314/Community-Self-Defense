@@ -602,7 +602,7 @@ export default function App() {
               <h4 className="mb-4">Connect</h4>
               <ul className="space-y-2 text-gray-400 text-sm">
                 <li>Facebook</li>
-                <li>Instagram</li>
+                <li><a href="https://www.instagram.com/community_self_defense/" className="hover:text-[hsl(217,63%,47%)]">Instagram</a></li>
                 <li>Twitter</li>
                 <li>YouTube</li>
               </ul>
