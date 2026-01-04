@@ -74,7 +74,13 @@ export default function App() {
     {
       name: "Myles Moudy",
       specialty: "Kickboxing & MMA",
-      credentials: "Black Belt BJJ, Retired Pro MMA",
+      credentials: (
+        <>
+          BJJ Black Belt under {""}
+          <a href="https://www.bjjheroes.com/bjj-fighters/joao-assis" className="text-blue-600 underline hover:text-blue-800">Joao Assis</a> 
+          , Ranked #1 Nationally as a Brown belt, Former MMA fighter
+        </>
+      ),
       image: mylesImage.src
     },
     {
