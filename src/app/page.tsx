@@ -358,6 +358,9 @@ export default function App() {
             <p className="text-gray-600 max-w-2xl mx-auto">
               Choose the plan that fits your training goals and schedule.
             </p>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              All membership payments are made in person.
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
