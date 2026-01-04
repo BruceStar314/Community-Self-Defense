@@ -142,6 +142,32 @@ export default function App() {
     }
   ];
 
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  const form = e.target;
+
+  const data = {
+    name: form.name.value,
+    email: form.email.value,
+    phone: form.phone.value,
+    interest: form.interest.value,
+  };
+
+  const res = await fetch("/api/free-trial", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data),
+  });
+
+  if (res.ok) {
+    alert("Free trial request sent! We'll contact you soon.");
+    form.reset();
+  } else {
+    alert("Something went wrong. Please try again.");
+  }
+};
+
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
@@ -519,53 +545,66 @@ export default function App() {
                   </p>
                 </div>
               </div>
-            </div>
+            </div>            
+<div className="bg-gray-50 rounded-lg p-8">
+  <h3 className="text-2xl mb-6">Request a Free Trial</h3>
 
-            <div className="bg-gray-50 rounded-lg p-8">
-              <h3 className="text-2xl mb-6">Request a Free Trial</h3>
-              <form className="space-y-4">
-                <div>
-                  <label className="block text-sm mb-2">Name</label>
-                  <input 
-                    type="text" 
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[hsl(217,63%,47%)]"
-                    placeholder="Your name"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm mb-2">Email</label>
-                  <input 
-                    type="email" 
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[hsl(217,63%,47%)]"
-                    placeholder="your@email.com"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm mb-2">Phone</label>
-                  <input 
-                    type="tel" 
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[hsl(217,63%,47%)]"
-                    placeholder="(555) 123-4567"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm mb-2">Interested In</label>
-                  <select className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[hsl(217,63%,47%)]">
-                    <option>MMA Fundamentals</option>
-                    <option>Boxing & Striking</option>
-                    <option>Kickboxing Fitness</option>
-                    <option>Self-Defense</option>
-                    <option>Not Sure Yet</option>
-                  </select>
-                </div>
-                <button 
-                  type="submit"
-                  className="w-full bg-[hsl(217,63%,47%)] hover:bg-[hsl(217,63%,42%)] text-white py-3 rounded-lg transition-colors"
-             >
-                  Book Free Trial
-                </button>
-              </form>
-            </div>
+  <form className="space-y-4" onSubmit={handleSubmit}>
+    <div>
+      <label className="block text-sm mb-2">Name</label>
+      <input
+        name="name"
+        type="text"
+        required
+        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[hsl(217,63%,47%)]"
+        placeholder="Your name"
+      />
+    </div>
+
+    <div>
+      <label className="block text-sm mb-2">Email</label>
+      <input
+        name="email"
+        type="email"
+        required
+        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[hsl(217,63%,47%)]"
+        placeholder="your@email.com"
+      />
+    </div>
+
+    <div>
+      <label className="block text-sm mb-2">Phone</label>
+      <input
+        name="phone"
+        type="tel"
+        required
+        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[hsl(217,63%,47%)]"
+        placeholder="(555) 123-4567"
+      />
+    </div>
+
+    <div>
+      <label className="block text-sm mb-2">Interested In</label>
+      <select
+        name="interest"
+        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[hsl(217,63%,47%)]"
+      >
+        <option>MMA Fundamentals</option>
+        <option>Boxing & Striking</option>
+        <option>Kickboxing Fitness</option>
+        <option>Self-Defense</option>
+        <option>Not Sure Yet</option>
+      </select>
+    </div>
+
+    <button
+      type="submit"
+      className="w-full bg-[hsl(217,63%,47%)] hover:bg-[hsl(217,63%,42%)] text-white py-3 rounded-lg transition-colors"
+    >
+      Book Free Trial
+    </button>
+  </form>
+</div>
           </div>
         </div>
       </section>

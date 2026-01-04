@@ -1,3 +1,4 @@
 {
+  "/api/free-trial/route": "app/api/free-trial/route.js",
   "/page": "app/page.js"
 }

@@ -1,35 +1,5 @@
-[00:00:00.496] Server  LOG      ✓ Ready in 327ms
-[00:00:27.802] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:22.477] Server  LOG      ✓ Compiled in 53ms
-[00:01:42.740] Server  LOG      ✓ Compiled in 58ms
-[00:01:54.407] Server  LOG      ✓ Compiled in 43ms
-[00:02:59.075] Server  LOG      ✓ Compiled in 49ms
-[00:02:59.178] Browser ERROR   ./src/app/page.tsx:77:51
-Parsing ecmascript source code failed
-  75 |       name: "Myles Moudy",
-  76 |       specialty: "Kickboxing & MMA",
-> 77 |       credentials: "BJJ Black Belt under <a href="#"Joao Assis></a> , Ranked #1 Nationally as a Brown belt, Former MMA fighter ",
-     |                                                   ^
-  78 |       image: mylesImage.src
-  79 |     },
-  80 |     {
-
-Expected ',', got '#'
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.tsx [Client Component Browser]
-    ./src/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.tsx [Client Component SSR]
-    ./src/app/page.tsx [Server Component]
-[00:05:04.660] Server  LOG      ✓ Compiled in 70ms
-[00:05:05.668] Browser ERROR   React does not recognize the `%s` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `%s` instead. If you accidentally passed it from a parent component, remove it from the DOM element. Joao joao
-[00:05:05.668] Browser ERROR   React does not recognize the `%s` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `%s` instead. If you accidentally passed it from a parent component, remove it from the DOM element. Assis assis
-[00:06:07.916] Server  LOG      ✓ Compiled in 53ms
-[00:07:03.395] Server  LOG      ✓ Compiled in 56ms
-[00:07:21.056] Server  LOG      ✓ Compiled in 52ms
-[00:08:09.289] Server  LOG      ✓ Compiled in 67ms
-[00:08:45.277] Server  LOG      ✓ Compiled in 53ms
-[00:08:58.997] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:00.673] Server  LOG      ✓ Ready in 471ms
+[00:00:05.579] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:05.629] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:05.642] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:05.676] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
