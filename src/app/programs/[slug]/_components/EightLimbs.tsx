@@ -20,8 +20,8 @@ export function EightLimbs() {
           {/* Left Content */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-0.5 bg-red-600" />
-              <span className="text-red-600 uppercase tracking-widest text-xs font-semibold">
+              <div className="w-12 h-0.5 bg-blue-600" />
+              <span className="text-blue-600 uppercase tracking-widest text-xs font-semibold">
                 The Art of Eight Limbs
               </span>
             </div>
@@ -33,7 +33,7 @@ export function EightLimbs() {
                   letterSpacing: '0.02em'
                 }}>
               WHAT IS<br/>
-              <span className="text-red-600">MUAY THAI?</span>
+              <span className="text-blue-600">MUAY THAI?</span>
             </h2>
 
             <p className="text-gray-400 text-lg mb-6 leading-relaxed">
@@ -43,14 +43,14 @@ export function EightLimbs() {
             </p>
 
             <p className="text-gray-400 text-lg mb-8 leading-relaxed">
-              At Kings MMA Anaheim, we honor this tradition while infusing modern training 
+              At Community-Self-Defense, we honor this tradition while infusing modern training 
               techniques to create warriors of all levels. Whether you're stepping into the ring for 
               fitness, discipline, or competition, our Muay Thai program will unleash the 
               fighter within.
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <button className="px-8 py-3 bg-red-600 text-white uppercase tracking-wider text-sm font-semibold hover:bg-red-700 transition-colors">
+              <button className="px-8 py-3 bg-blue-600 text-white uppercase tracking-wider text-sm font-semibold hover:bg-blue-700 transition-colors">
                 Book Trial Class
               </button>
               <button className="px-8 py-3 bg-transparent border border-white text-white uppercase tracking-wider text-sm font-semibold hover:bg-white hover:text-black transition-colors">
@@ -71,7 +71,7 @@ export function EightLimbs() {
             </div>
 
             {/* Stats Overlay */}
-            <div className="absolute -bottom-8 -left-8 bg-red-600 p-6 rounded-lg">
+            <div className="absolute -bottom-8 -left-8 bg-blue-600 p-6 rounded-lg">
               <div className="text-4xl font-bold text-white mb-1">15+</div>
               <div className="text-sm text-white/90 uppercase tracking-wider">Years Experience</div>
             </div>
@@ -81,3 +81,4 @@ export function EightLimbs() {
     </section>
   );
 }
+
