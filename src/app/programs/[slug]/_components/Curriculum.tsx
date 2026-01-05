@@ -42,16 +42,16 @@ export function Curriculum() {
         {/* Header */}
         <div className="mb-16 text-center">
           <div className="flex items-center justify-center gap-3 mb-6">
-            <div className="w-12 h-0.5 bg-red-600" />
-            <span className="text-red-600 uppercase tracking-widest text-xs font-semibold">
+            <div className="w-12 h-0.5 bg-blue-600" />
+            <span className="text-blue-600 uppercase tracking-widest text-xs font-semibold">
               What You'll Learn
             </span>
-            <div className="w-12 h-0.5 bg-red-600" />
+            <div className="w-12 h-0.5 bg-blue-600" />
           </div>
           
           <h2 className="text-5xl md:text-7xl uppercase tracking-wider text-white mb-4"
               style={{ fontFamily: 'Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif' }}>
-            CURATED <span className="text-red-600">CURRICULUM</span>
+            CURATED <span className="text-blue-600">CURRICULUM</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-3xl mx-auto">
             Our comprehensive training program covers all aspects of Muay Thai, from fundamentals to advanced techniques.
@@ -72,14 +72,14 @@ export function Curriculum() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent" />
                 
                 {/* Number Badge */}
-                <div className="absolute top-4 right-4 w-12 h-12 bg-red-600 rounded-full flex items-center justify-center">
+                <div className="absolute top-4 right-4 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
                   <span className="text-white font-bold text-xl">0{index + 1}</span>
                 </div>
               </div>
 
               {/* Content */}
               <div className="p-6">
-                <h3 className="text-white uppercase tracking-wider mb-3 group-hover:text-red-600 transition-colors text-lg font-bold"
+                <h3 className="text-white uppercase tracking-wider mb-3 group-hover:text-blue-600 transition-colors text-lg font-bold"
                     style={{ letterSpacing: '0.1em' }}>
                   {item.title}
                 </h3>
@@ -89,7 +89,7 @@ export function Curriculum() {
               </div>
 
               {/* Hover Border Effect */}
-              <div className="absolute inset-0 border-2 border-red-600 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none rounded-lg" />
+              <div className="absolute inset-0 border-2 border-blue-600 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none rounded-lg" />
             </div>
           ))}
         </div>
@@ -97,3 +97,4 @@ export function Curriculum() {
     </section>
   );
 }
+
