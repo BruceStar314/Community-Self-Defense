@@ -1,15 +1,16 @@
 "use client";
 
 import { useState } from 'react';
+import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { ImageWithFallback } from './components/backup/ImageWithFallback.tsx';
+import { ImageWithFallback } from '@/components/backup/ImageWithFallback.tsx';
 import { Menu, Shield, Dumbbell, Users, Clock, MapPin, Phone, Mail, ChevronRight, Award, Target, Zap, Star } from 'lucide-react';
 import Image from "next/image"
-import logo from './components/images/0D74BBA2CSD-logo.png';
-import sidImage from './components/images/sid.png';
-import mylesImage from './components/images/myles.png';
-import domImage from './components/images/dom.png';
-import supportMissionImage from './components/images/group.png';
+import logo from '@/components/images/0D74BBA2CSD-logo.png';
+import sidImage from '@/components/images/sid.png';
+import mylesImage from '@/components/images/myles.png';
+import domImage from '@/components/images/dom.png';
+import supportMissionImage from '@/components/images/group.png';
 
 export default function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -18,7 +19,7 @@ export default function App() {
   const programs = [
     {
       name: "BRAZILIAN JIU JITSU",
-      slug: "brazilian jiu jitsu",
+      slug: "brazilian-jiu-jitsu",
       image: "https://images.unsplash.com/photo-1699464676210-48cd0449df42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxCcmF6aWxpYW4lMjBKaXUlMjBKaXRzdSUyMHRyYWluaW5nfGVufDF8fHx8MTc2NjIxNzU3OXww&ixlib=rb-4.1.0&q=80&w=1080"
     },
     {
@@ -48,17 +49,17 @@ export default function App() {
     },
     {
       name: "NO GI",
-      slug: "no gi",
+      slug: "no-gi",
       image: "https://images.unsplash.com/photo-1699464676210-48cd0449df42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxCcmF6aWxpYW4lMjBKaXUlMjBKaXRzdSUyMHRyYWluaW5nfGVufDF8fHx8MTc2NjIxNzU3OXww&ixlib=rb-4.1.0&q=80&w=1080"
     },
     {
       name: "KIDS JIU JITSU",
-      slug: "kids jiu jitsu",
+      slug: "kids-jiu-jitsu",
       image: "https://images.unsplash.com/photo-1635962005741-a9c4904d110b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWRzJTIwbWFydGlhbCUyMGFydHN8ZW58MXx8fHwxNzY2MTgwNDkxfDA&ixlib=rb-4.1.0&q=80&w=1080"
     },
     {
       name: "KIDS MUAY THAI",
-      slug: "kids muay-thai",
+      slug: "kids-muay-thai",
       image: "https://images.unsplash.com/photo-1635962005741-a9c4904d110b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWRzJTIwbWFydGlhbCUyMGFydHN8ZW58MXx8fHwxNzY2MTgwNDkxfDA&ixlib=rb-4.1.0&q=80&w=1080"
     },
   ];
@@ -167,6 +168,7 @@ export default function App() {
     alert("Something went wrong. Please try again.");
   }
 };
+const router = useRouter();
 
   return (
     <div className="min-h-screen bg-white">
@@ -212,7 +214,7 @@ export default function App() {
               <a href="#trainers" className="hover:text-[hsl(217,63%,47%)] transition-colors">Trainers</a>
               <a href="#membership" className="hover:text-[hsl(217,63%,47%)] transition-colors">Membership</a>
               <a href="#contact" className="hover:text-[hsl(217,63%,47%)] transition-colors">Location</a>
-              <a href="#schedule" className="hover:text-[hsl(217,63%,47%)] transition-colors">Schedule</a>
+              <Link href="/schedule" className="hover:text-[hsl(217,63%,47%)] transition-colors">Schedule</Link>
               <a href="#support" className="hover:text-[hsl(217,63%,47%)] transition-colors">Support Our Mission</a>
               <a href="#contact" className="bg-[hsl(217,63%,47%)] hover:bg-[hsl(217,63%,42%)] px-6 py-2 rounded transition-colors w-full">
                 Join Now

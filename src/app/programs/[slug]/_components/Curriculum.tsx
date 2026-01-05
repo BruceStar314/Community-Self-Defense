@@ -1,4 +1,4 @@
-import { ImageWithFallback } from './backup/ImageWithFallback';
+import { ImageWithFallback } from '@/components/backup/ImageWithFallback';
 
 const curriculumItems = [
   {
