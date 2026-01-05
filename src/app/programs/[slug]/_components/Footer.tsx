@@ -1,102 +1,60 @@
+import Image from "next/image";
+import Link from "next/link";
+import logo from "@/app/components/images/0D74BBA2CSD-logo.png";
+
 export function Footer() {
   return (
-    <footer className="bg-black border-t border-red-900/30 py-16">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-          {/* Logo & Info */}
-          <div className="md:col-span-1">
-            <div className="mb-4">
-              <div className="text-2xl font-bold text-white mb-1">
-                KINGS <span className="text-red-600">MMA</span>
+    <footer className="bg-black text-white py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-4 gap-8 mb-8">
+            <div>
+              <div className="flex items-center gap-2 mb-4">
+                <Image src={logo} alt="CSD Logo" width={48} height={48} />
+                <div>
+                  <div>CSD</div>
+                  <div className="text-xs text-gray-400">Community-Self-Defense</div>
+                </div>
               </div>
-              <div className="text-[10px] text-gray-400 tracking-widest uppercase">Anaheim</div>
+              <p className="text-gray-400 text-sm">
+                Empowering our community through martial arts training and self-defense education.
+              </p>
             </div>
-            <p className="text-gray-400 text-sm leading-relaxed">
-              Elite Muay Thai Training<br />
-              Southern California's Premier<br />
-              Combat Sports Facility
-            </p>
-          </div>
 
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-white uppercase tracking-wider mb-4 text-sm font-bold">Quick Links</h3>
-            <ul className="space-y-3">
-              <li>
-                <a href="#schedule" className="text-gray-400 hover:text-red-600 transition-colors text-sm">
-                  Schedule
-                </a>
-              </li>
-              <li>
-                <a href="#programs" className="text-gray-400 hover:text-red-600 transition-colors text-sm">
-                  Programs
-                </a>
-              </li>
-              <li>
-                <a href="#trial" className="text-gray-400 hover:text-red-600 transition-colors text-sm">
-                  Book Trial Class
-                </a>
-              </li>
-              <li>
-                <a href="#about" className="text-gray-400 hover:text-red-600 transition-colors text-sm">
-                  About Us
-                </a>
-              </li>
-            </ul>
-          </div>
+            <div>
+              <h4 className="mb-4">Quick Links</h4>
+              <ul className="space-y-2 text-gray-400 text-sm">
+                <li><a href="#classes" className="hover:text-[hsl(217,63%,47%)] transition-colors">Classes</a></li>
+                <li><a href="#trainers" className="hover:text-[hsl(217,63%,47%)] transition-colors">Trainers</a></li>
+                <li><a href="#membership" className="hover:text-[hsl(217,63%,47%)] transition-colors">Membership</a></li>
+                <li><a href="#contact" className="hover:text-[hsl(217,63%,47%)] transition-colors">Contact</a></li>
+              </ul>
+            </div>
 
-          {/* Contact */}
-          <div>
-            <h3 className="text-white uppercase tracking-wider mb-4 text-sm font-bold">Contact</h3>
-            <ul className="space-y-3 text-gray-400 text-sm">
-              <li>123 Fighter Street</li>
-              <li>Anaheim, CA 92805</li>
-              <li className="pt-2">
-                <a href="mailto:info@kingsmma.com" className="hover:text-red-600 transition-colors">
-                  info@kingsmma.com
-                </a>
-              </li>
-              <li>
-                <a href="tel:555-123-4567" className="hover:text-red-600 transition-colors">
-                  (555) 123-4567
-                </a>
-              </li>
-            </ul>
-          </div>
+            <div>
+              <h4 className="mb-4">Programs</h4>
+              <ul className="space-y-2 text-gray-400 text-sm">
+                <li>MMA Fundamentals</li>
+                <li>Striking</li>
+                <li>Grappling</li>
+                <li>Self-Defense</li>
+              </ul>
+            </div>
 
-          {/* Hours */}
-          <div>
-            <h3 className="text-white uppercase tracking-wider mb-4 text-sm font-bold">Training Hours</h3>
-            <ul className="space-y-3 text-gray-400 text-sm">
-              <li>Mon-Fri: 6AM - 9PM</li>
-              <li>Saturday: 8AM - 6PM</li>
-              <li>Sunday: 9AM - 4PM</li>
-              <li className="pt-2">
-                <button className="px-6 py-2 bg-red-600 text-white text-xs uppercase tracking-wider hover:bg-red-700 transition-colors">
-                  Book Now
-                </button>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        {/* Bottom Bar */}
-        <div className="pt-8 border-t border-red-900/30">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-500 text-sm">
-              © 2026 Kings MMA Anaheim. All rights reserved.
-            </p>
-            <div className="flex gap-6">
-              <a href="#privacy" className="text-gray-500 hover:text-red-600 transition-colors text-sm">
-                Privacy Policy
-              </a>
-              <a href="#terms" className="text-gray-500 hover:text-red-600 transition-colors text-sm">
-                Terms of Service
-              </a>
+            <div>
+              <h4 className="mb-4">Connect</h4>
+              <ul className="space-y-2 text-gray-400 text-sm">
+                <li>Facebook</li>
+                <li><a href="https://www.instagram.com/community_self_defense/" className="hover:text-[hsl(217,63%,47%)]">Instagram</a></li>
+                <li>Twitter</li>
+                <li>YouTube</li>
+              </ul>
             </div>
           </div>
+
+          <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
+            <p>&copy; 2025 Community-Self-Defense. All rights reserved.</p>
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
   );
 }

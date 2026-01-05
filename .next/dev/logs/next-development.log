@@ -1,9 +1,67 @@
-[00:00:01.018] Server  LOG      ✓ Ready in 660ms
-[00:00:08.829] Server  LOG      ○ Compiling /programs/[slug] ...
-[00:00:10.816] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:25.508] Server  LOG      ✓ Compiled in 75ms
-[00:00:35.577] Server  LOG      ✓ Compiled in 59ms
-[00:00:57.390] Server  LOG      ✓ Compiled in 67ms
-[00:01:18.072] Server  LOG      ✓ Compiled in 58ms
-[00:01:28.273] Server  LOG      ✓ Compiled in 56ms
-[00:02:28.846] Server  LOG      ✓ Compiled in 88ms
+[00:00:01.020] Server  LOG      ✓ Ready in 662ms
+[00:00:18.812] Server  LOG      ○ Compiling /programs/[slug] ...
+[00:00:20.388] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:00.012] Server  ERROR    ⨯ ReferenceError: Image is not defined
+[00:01:00.191] Browser ERROR   uncaughtError: ReferenceError: Image is not defined
+[00:01:36.779] Browser ERROR   ./src/app/programs/[slug]/_components/Footer.tsx:1:10
+Ecmascript file had an error
+> 1 | import { useState } from "react";
+    |          ^^^^^^^^
+  2 | import Image from "next/image";
+  3 | import Link from "next/link";
+  4 |
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import trace:
+  Server Component:
+    ./src/app/programs/[slug]/_components/Footer.tsx
+    ./src/app/programs/[slug]/page.tsx
+[00:01:45.565] Server  LOG      ✓ Compiled in 69ms
+[00:01:45.714] Server  ERROR    ⨯ ReferenceError: logo is not defined
+[00:01:46.152] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:46.152] Browser ERROR   uncaughtError: ReferenceError: logo is not defined
+[00:01:54.035] Server  ERROR    ⨯ ReferenceError: Logo is not defined
+[00:01:54.423] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:54.423] Browser ERROR   uncaughtError: ReferenceError: Logo is not defined
+[00:02:25.027] Browser ERROR   ./src/app/programs/[slug]/_components/Footer.tsx:3:8
+Ecmascript file had an error
+  1 | import Image from "next/image";
+  2 | import Link from "next/link";
+> 3 | import Link from "next/link";
+    |        ^^^^
+  4 | import logo from "@/app/components/images/0D74BBA2CSD-logo.png";
+  5 |
+  6 | export function Footer() {
+
+the name `Link` is defined multiple times
+
+Import trace:
+  Server Component:
+    ./src/app/programs/[slug]/_components/Footer.tsx
+    ./src/app/programs/[slug]/page.tsx
+[00:02:31.754] Browser ERROR   ./src/app/programs/[slug]/_components/Footer.tsx:3:8
+Ecmascript file had an error
+  1 | import Image from "next/image";
+  2 | import Link from "next/link";
+> 3 | import Link from "next/link";
+    |        ^^^^
+  4 | import logo from "@/app/components/images/0D74BBA2CSD-logo.png";
+  5 |
+  6 | export function Footer() {
+
+the name `Link` is defined multiple times
+
+Import trace:
+  Server Component:
+    ./src/app/programs/[slug]/_components/Footer.tsx
+    ./src/app/programs/[slug]/page.tsx
+[00:02:38.691] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:38.095] Server  LOG      ✓ Compiled in 87ms
+[00:05:48.636] Server  LOG      ✓ Compiled in 88ms
+[00:06:21.661] Server  LOG      ✓ Compiled in 110ms
+[00:06:39.762] Server  LOG      ✓ Compiled in 69ms
+[00:07:50.397] Server  LOG      ✓ Compiled in 69ms
+[00:08:33.225] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

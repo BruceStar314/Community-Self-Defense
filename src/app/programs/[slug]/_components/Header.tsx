@@ -32,14 +32,14 @@ export function Header() {
             </div>
 
             {/* Desktop Menu */}
-            <div className="hidden md:flex items-center gap-8">
-              <a href="#classes">Classes</a>
-              <a href="#trainers">Trainers</a>
-              <a href="#membership">Membership</a>
-              <a href="#contact">Location</a>
-              <Link href="/schedule">Schedule</Link>
-              <a href="#contact">Contact Us</a>
-              <a href="#support">Support Our Mission</a>
+            <div className="hidden md:flex items-center gap-8 ">
+              <a href="#classes" className="hover:text-[hsl(217,63%,42%)]">Classes</a>
+              <a href="#trainers" className="hover:text-[hsl(217,63%,42%)]">Trainers</a>
+              <a href="#membership" className="hover:text-[hsl(217,63%,42%)]">Membership</a>
+              <a href="#contact" className="hover:text-[hsl(217,63%,42%)]">Location</a>
+              <Link href="/schedule" className="hover:text-[hsl(217,63%,42%)]">Schedule</Link>
+              <a href="#contact" className="hover:text-[hsl(217,63%,42%)]">Contact Us</a>
+              <a href="#support" className="hover:text-[hsl(217,63%,42%)]">Support Our Mission</a>
               <a
                 href="#contact"
                 className="bg-[hsl(217,63%,47%)] hover:bg-[hsl(217,63%,42%)] px-6 py-2 rounded"
