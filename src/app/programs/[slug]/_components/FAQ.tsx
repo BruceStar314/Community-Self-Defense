@@ -43,11 +43,11 @@ export function FAQ() {
         {/* Header */}
         <div className="mb-12">
           <div className="flex items-center gap-2 mb-4">
-            <div className="w-8 h-8 flex items-center justify-center border border-amber-600">
-              <span className="text-amber-600 text-xs font-serif">KA</span>
+            <div className="w-8 h-8 flex items-center justify-center border border-blue-600">
+              <span className="text-blue-600 text-xs font-serif">CSD</span>
             </div>
-            <span className="text-amber-600 uppercase tracking-wider text-xs">
-              Kings Anaheim<br/>Muay Thai Institute
+            <span className="text-white uppercase tracking-wider text-xs">
+              Community-Self-Defense<br/>Muay Thai Institute
             </span>
           </div>
           
@@ -66,7 +66,7 @@ export function FAQ() {
                 value={`item-${index}`}
                 className="border border-blue-600/30 bg-black/50 backdrop-blur-sm"
               >
-                <AccordionTrigger className="px-6 py-4 text-white hover:text-amber-600 uppercase tracking-wider text-left">
+                <AccordionTrigger className="px-6 py-4 text-white hover:text-blue-600 uppercase tracking-wider text-left">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 text-gray-300 leading-relaxed">
