@@ -1,13 +1,20 @@
 import Link from "next/link";
+import { Header } from './_components/Header';
+import { Hero } from './_components/Hero';
+import { EightLimbs } from './_components/EightLimbs';
+import { Curriculum } from './_components/Curriculum';
+import { FAQ } from './_components/FAQ';
+import { Footer } from './_components/Footer';
 
-export default function SchedulePage() {
+export default function App() {
   return (
-    <div className="h-screen w-full bg-gray-300 flex items-center justify-center">
-      <div className="text-center">
-        <h1 className="text-4xl mb-4 font-bold">Under Construction</h1>
-        <p className="text-lg">Coming soon.</p>
-        <Link href="/" className="text-l h-3xl w-xl bg-gray-400 rounded-xl p-1">Go back to home page</Link>
-      </div>
+    <div className="min-h-screen bg-black">
+      <Header />
+      <Hero />
+      <EightLimbs />
+      <Curriculum />
+      <FAQ />
+      <Footer />
     </div>
   );
 }
