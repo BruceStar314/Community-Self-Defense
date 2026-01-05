@@ -11,7 +11,7 @@ export function Hero() {
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-black/60" />
-        <div className="absolute inset-0 bg-red-900/10" />
+        <div className="absolute inset-0 bg-blue-900/10" />
       </div>
 
       {/* Content */}
@@ -19,9 +19,9 @@ export function Hero() {
         <div className="max-w-4xl">
           <div className="mb-8">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-0.5 bg-red-600" />
-              <span className="text-red-600 uppercase tracking-widest text-xs font-semibold">
-                Kings MMA Anaheim
+              <div className="w-12 h-0.5 bg-blue-600" />
+              <span className="text-blue-600 uppercase tracking-widest text-xs font-semibold">
+                Community-Self-Defense
               </span>
             </div>
           </div>
@@ -33,7 +33,7 @@ export function Hero() {
                 lineHeight: '0.9',
               }}>
             <span className="text-white">MUAY</span>{' '}
-            <span className="text-red-600">THAI</span>
+            <span className="text-blue-600">THAI</span>
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl">
@@ -41,7 +41,7 @@ export function Hero() {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <button className="px-8 py-4 bg-red-600 text-white uppercase tracking-wider text-sm font-semibold hover:bg-red-700 transition-colors">
+            <button className="px-8 py-4 bg-blue-600 text-white uppercase tracking-wider text-sm font-semibold hover:bg-blue-700 transition-colors">
               Start Free Trial
             </button>
             <button className="px-8 py-4 bg-transparent border-2 border-white text-white uppercase tracking-wider text-sm font-semibold hover:bg-white hover:text-black transition-colors">
