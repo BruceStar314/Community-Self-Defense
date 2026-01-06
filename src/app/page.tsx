@@ -17,8 +17,7 @@ import {
   Zap,
   Star,
 } from "lucide-react";
-
-
+import type { LucideIcon } from "lucide-react";
 import { ImageWithFallback } from "@/components/backup/ImageWithFallback";
 import logo from "@/components/images/0D74BBA2CSD-logo.png";
 import sidImage from "@/components/images/sid.png";
@@ -26,9 +25,11 @@ import mylesImage from "@/components/images/myles.png";
 import domImage from "@/components/images/dom.png";
 import supportMissionImage from "@/components/images/group.png";
 import presidentImage from "@/components/images/President.webp";
+import treasurerImage from "@/components/images/Treasurer.webp";
+import secretaryImage from "@/components/images/Secretary.webp";
 export default function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [hoveredProgram, setHoveredProgram] = useState(0);
+  const [hoveredProgram, setHoveredProgram] = useState<number | null>(0);
 
   const programs = [
     {
@@ -105,20 +106,41 @@ export default function App() {
       name: "Sid Skrob",
       specialty: "MMA & Brazilian Jiu-Jitsu",
       credentials: "Black Belt BJJ, 10+ years teaching experience",
-      image: sidImage
+      image: sidImage.src
     },
     
     {
       name: "Myles Moudy",
       specialty: "Kickboxing & MMA",
-      credentials: "Black Belt BJJ, Retired Pro MMA",
-      image: mylesImage
+      credentials: "",
+      image: mylesImage.src
     },
     {
       name: "Domic Delgado",
       specialty: "Boxing & MMA",
       credentials: "Amature Muay Thai Phenom",
-      image: domImage
+      image: domImage.src
+    }
+  ];
+
+  const classBody = [
+    {
+      name: "Myles Moudy",
+      title: "President",
+      text: "Myles Moudy is a Brazilian Jiu-Jitsu black belt and the owner of the gym. With years of experience as a coach and mentor, Myles is deeply committed to using martial arts as a tool for personal growth, confidence building, and community empowerment. As President, he provides leadership and vision for the organization, ensuring its mission stays rooted in service, integrity, and positive impact.",
+      image: presidentImage.src
+    },
+    {
+      name: "Sid Skrob",
+      title: "Treasurer",
+      text: "Sid Skrob is a Brazilian Jiu-Jitsu black belt and co-owner of the gym. Known for his discipline and dedication both on and off the mats, Sid brings a steady and thoughtful approach to the organization’s financial oversight. As Treasurer, he is responsible for maintaining transparency, accountability, and the long-term financial health of the nonprofit.",
+      image: treasurerImage.src
+    },
+    {
+      name: "Liz Bartrug",
+      title: "Secretary",
+      text: "Elizabeth Bartrug, BS, CATC III is a Master of Social Work (MSW) student at California State University, Long Beach with a background in behavioral health and substance use counseling. Her involvement in martial arts began alongside her daughter and evolved into a strong commitment to youth empowerment, violence prevention, and community-based skill building. As a Certified Alcohol and Drug Counselor (CATC III), Elizabeth brings a trauma-informed, strengths-based perspective to her work with youth and families. She trains and volunteers with The Community Self-Defense, supporting programming that uses martial arts to build confidence, self-regulation, discipline, and positive social development. Her work reflects a belief that martial arts can be a powerful, accessible tool for fostering resilience and long-term well-being in underserved communities.",
+      image: secretaryImage.src
     }
   ];
 
@@ -180,7 +202,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center gap-3">
-              <img src={logo} alt="CSD Logo" className="w-12 h-12" />
+              <Image src={logo} alt="CSD Logo" width={48} height={48} />
               <div>
                 <div className="font-bold">Community-Self-Defense</div>
                 <div className="text-xs text-gray-400">CSD</div>
@@ -440,10 +462,11 @@ export default function App() {
 
           {/* Community Image */}
           <div className="mb-12 rounded-lg overflow-hidden shadow-xl">
-            <img 
-              src={supportMissionImage} 
-              alt="Community Self Defense Family" 
+            <Image 
+              src={supportMissionImage}
+              alt="Community Self Defense Family"
               className="w-full h-auto"
+              sizes="100vw"
             />
           </div>
 
@@ -475,13 +498,40 @@ export default function App() {
             <button className="bg-[hsl(217,63%,47%)] hover:bg-[hsl(217,63%,42%)] text-white px-8 py-4 rounded-lg transition-colors">
               Make a Donation
             </button>
-            <button className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 rounded-lg transition-colors">
+            {/*    <button className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 rounded-lg transition-colors">
               Become a Sponsor
-            </button>
+            </button> 
+            */}
           </div>
           
         </div>
       </section>
+
+      <section id="board" className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16" />
+          <div className="grid md:grid-cols-3 gap-8">
+            {classBody.map((classBody, index) => (
+              <div key={index} className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                <div className="relative h-80">
+                  <ImageWithFallback
+                    src={classBody.image}
+                    alt={classBody.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-2xl mb-2">{classBody.name}</h3>
+                  <div className="text-[hsl(217,63%,47%)] mb-2">{classBody.title}</div>
+                  <p className="text-gray-600 text-sm">{classBody.text}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -510,9 +560,9 @@ export default function App() {
                 </div>
                 <div>
                   <h3 className="text-xl mb-2">Phone</h3>
-                  <h2 className="text-x1 mb-2">Header-Instructor: Sid Skrob</h2>
+                  <h2 className="text-xl mb-2">Header-Instructor: Sid Skrob</h2>
                   <p className="text-gray-600">(949)-795-1110</p>
-                  <h2 className="text-x1 mb-2">Co-Instructor: Myles Moudy</h2>
+                  <h2 className="text-xl mb-2">Co-Instructor: Myles Moudy</h2>
                   <p className="text-gray-600">(714)-369-5220</p>
                 </div>
               </div>
