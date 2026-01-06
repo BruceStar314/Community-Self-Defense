@@ -1,17 +1,31 @@
 "use client";
 
-import { useState } from 'react';
-import { useRouter } from "next/navigation";
-import Link from "next/link";
-import { ImageWithFallback } from '@/components/backup/ImageWithFallback.tsx';
-import { Menu, Shield, Dumbbell, Users, Clock, MapPin, Phone, Mail, ChevronRight, Award, Target, Zap, Star } from 'lucide-react';
-import Image from "next/image"
-import logo from '@/components/images/0D74BBA2CSD-logo.png';
-import sidImage from '@/components/images/sid.png';
-import mylesImage from '@/components/images/myles.png';
-import domImage from '@/components/images/dom.png';
-import supportMissionImage from '@/components/images/group.png';
+import { useState } from "react";
+import Image from "next/image";
+import {
+  Menu,
+  Shield,
+  Dumbbell,
+  Users,
+  Clock,
+  MapPin,
+  Phone,
+  Mail,
+  ChevronRight,
+  Award,
+  Target,
+  Zap,
+  Star,
+} from "lucide-react";
 
+
+import { ImageWithFallback } from "@/components/backup/ImageWithFallback";
+import logo from "@/components/images/0D74BBA2CSD-logo.png";
+import sidImage from "@/components/images/sid.png";
+import mylesImage from "@/components/images/myles.png";
+import domImage from "@/components/images/dom.png";
+import supportMissionImage from "@/components/images/group.png";
+import presidentImage from "@/components/images/President.webp";
 export default function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [hoveredProgram, setHoveredProgram] = useState(0);
@@ -19,49 +33,71 @@ export default function App() {
   const programs = [
     {
       name: "BRAZILIAN JIU JITSU",
-      slug: "brazilian-jiu-jitsu",
       image: "https://images.unsplash.com/photo-1699464676210-48cd0449df42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxCcmF6aWxpYW4lMjBKaXUlMjBKaXRzdSUyMHRyYWluaW5nfGVufDF8fHx8MTc2NjIxNzU3OXww&ixlib=rb-4.1.0&q=80&w=1080"
     },
     {
       name: "MUAY THAI",
-      slug: "muay-thai",
       image: "https://images.unsplash.com/photo-1696454411278-a64de1369e83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxNdWF5JTIwVGhhaSUyMGtpY2tib3hpbmd8ZW58MXx8fHwxNzY2MjE3NTc5fDA&ixlib=rb-4.1.0&q=80&w=1080"
     },
     {
       name: "BOXING",
-      slug: "boxing",
       image: "https://images.unsplash.com/photo-1570312530820-d0f15f33a4a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxib3hpbmclMjB0cmFpbmluZyUyMGd5bXxlbnwxfHx8fDE3NjYxNDIxMjB8MA&ixlib=rb-4.1.0&q=80&w=1080"
     },
     {
       name: "MMA",
-      slug: "mma",
       image: "https://images.unsplash.com/photo-1688141402330-f4ed03f6bbf9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxNTUElMjBjYWdlJTIwZmlnaHRpbmd8ZW58MXx8fHwxNzY2MjE3NTgwfDA&ixlib=rb-4.1.0&q=80&w=1080"
     },
     {
       name: "WRESTLING",
-      slug: "wrestling",
       image: "https://images.unsplash.com/photo-1615117270691-3bc3cb65f2e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3cmVzdGxpbmclMjBncmFwcGxpbmd8ZW58MXx8fHwxNzY2MjE3NTgwfDA&ixlib=rb-4.1.0&q=80&w=1080"
     },
     {
       name: "KICKBOXING",
-      slug: "kickboxing",
       image: "https://images.unsplash.com/photo-1677184976710-0bb339946023?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWNrYm94aW5nJTIwZml0bmVzc3xlbnwxfHx8fDE3NjYyMTc1ODB8MA&ixlib=rb-4.1.0&q=80&w=1080"
     },
     {
       name: "NO GI",
-      slug: "no-gi",
       image: "https://images.unsplash.com/photo-1699464676210-48cd0449df42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxCcmF6aWxpYW4lMjBKaXUlMjBKaXRzdSUyMHRyYWluaW5nfGVufDF8fHx8MTc2NjIxNzU3OXww&ixlib=rb-4.1.0&q=80&w=1080"
     },
     {
       name: "KIDS JIU JITSU",
-      slug: "kids-jiu-jitsu",
       image: "https://images.unsplash.com/photo-1635962005741-a9c4904d110b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWRzJTIwbWFydGlhbCUyMGFydHN8ZW58MXx8fHwxNzY2MTgwNDkxfDA&ixlib=rb-4.1.0&q=80&w=1080"
     },
     {
       name: "KIDS MUAY THAI",
-      slug: "kids-muay-thai",
       image: "https://images.unsplash.com/photo-1635962005741-a9c4904d110b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWRzJTIwbWFydGlhbCUyMGFydHN8ZW58MXx8fHwxNzY2MTgwNDkxfDA&ixlib=rb-4.1.0&q=80&w=1080"
     },
+    {
+      name: "SELF DEFENSE",
+      image: "https://images.unsplash.com/photo-1765303206345-30d16b502d64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzZWxmJTIwZGVmZW5zZSUyMHRyYWluaW5nfGVufDF8fHx8MTc2NjIxNzU4MXww&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ];
+
+  const classes = [
+    {
+      name: "MMA Fundamentals",
+      description: "Learn the core techniques of mixed martial arts including striking, grappling, and ground control.",
+      icon: Shield,
+      image: "https://images.unsplash.com/photo-1708134003412-7a05fe510a5f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxNTUElMjB0cmFpbmluZyUyMGd5bXxlbnwxfHx8fDE3NjYwMTIwNDJ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      name: "Boxing & Striking",
+      description: "Master the art of boxing with professional coaching in technique, footwork, and combinations.",
+      icon: Target,
+      image: "https://images.unsplash.com/photo-1590556409324-aa1d726e5c3c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxib3hpbmclMjBmaXRuZXNzJTIwY2xhc3N8ZW58MXx8fHwxNzY2MDEyMDQyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      name: "Kickboxing Fitness",
+      description: "High-intensity cardio workout combining kickboxing techniques with strength and conditioning.",
+      icon: Zap,
+      image: "https://images.unsplash.com/photo-1765303237614-cce413f38aec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWNrYm94aW5nJTIwdHJhaW5pbmd8ZW58MXx8fHwxNzY1OTE5NTA5fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      name: "Self-Defense",
+      description: "Practical self-defense techniques for real-world situations, suitable for all skill levels.",
+      icon: Shield,
+      image: "https://images.unsplash.com/photo-1550759807-50dc0b381a1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXJ0aWFsJTIwYXJ0cyUyMGluc3RydWN0b3J8ZW58MXx8fHwxNzY1OTYxMjI5fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
   ];
 
   const trainers = [
@@ -69,26 +105,20 @@ export default function App() {
       name: "Sid Skrob",
       specialty: "MMA & Brazilian Jiu-Jitsu",
       credentials: "Black Belt BJJ, 10+ years teaching experience",
-      image: sidImage.src
+      image: sidImage
     },
     
     {
       name: "Myles Moudy",
       specialty: "Kickboxing & MMA",
-      credentials: (
-        <>
-          BJJ Black Belt under {""}
-          <a href="https://www.bjjheroes.com/bjj-fighters/joao-assis" className="text-blue-600 underline hover:text-blue-800">Joao Assis</a> 
-          , Ranked #1 Nationally as a Brown belt, Former MMA fighter
-        </>
-      ),
-      image: mylesImage.src
+      credentials: "Black Belt BJJ, Retired Pro MMA",
+      image: mylesImage
     },
     {
       name: "Domic Delgado",
       specialty: "Boxing & MMA",
       credentials: "Amature Muay Thai Phenom",
-      image: domImage.src
+      image: domImage
     }
   ];
 
@@ -143,33 +173,6 @@ export default function App() {
     }
   ];
 
-  const handleSubmit = async (e) => {
-  e.preventDefault();
-
-  const form = e.target;
-
-  const data = {
-    name: form.name.value,
-    email: form.email.value,
-    phone: form.phone.value,
-    interest: form.interest.value,
-  };
-
-  const res = await fetch("/api/free-trial", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(data),
-  });
-
-  if (res.ok) {
-    alert("Free trial request sent! We'll contact you soon.");
-    form.reset();
-  } else {
-    alert("Something went wrong. Please try again.");
-  }
-};
-const router = useRouter();
-
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
@@ -177,7 +180,7 @@ const router = useRouter();
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center gap-3">
-            <Image src={logo} alt="CSD Logo" width={48} height={48} />
+              <img src={logo} alt="CSD Logo" className="w-12 h-12" />
               <div>
                 <div className="font-bold">Community-Self-Defense</div>
                 <div className="text-xs text-gray-400">CSD</div>
@@ -190,12 +193,12 @@ const router = useRouter();
               <a href="#trainers" className="hover:text-[hsl(217,63%,47%)] transition-colors">Trainers</a>
               <a href="#membership" className="hover:text-[hsl(217,63%,47%)] transition-colors">Membership</a>
               <a href="#contact" className="hover:text-[hsl(217,63%,47%)] transition-colors">Location</a>
-              <Link href="/schedule" className="hover:text-[hsl(217,63%,47%)] transition-colors">Schedule</Link>
+              <a href="#schedule" className="hover:text-[hsl(217,63%,47%)] transition-colors">Schedule</a>
               <a href="#contact" className="hover:text-[hsl(217,63%,47%)] transition-colors">Contact Us</a>
               <a href="#support" className="hover:text-[hsl(217,63%,47%)] transition-colors">Support Our Mission</a>
-              <a href="#contact" className="bg-[hsl(217,63%,47%)] hover:bg-[hsl(217,63%,42%)] px-6 py-2 rounded transition-colors">
+              <button className="bg-[hsl(217,63%,47%)] hover:bg-[hsl(217,63%,42%)] px-6 py-2 rounded transition-colors">
                 Join Now
-              </a>
+              </button>
             </div>
 
             {/* Mobile Menu Button */}
@@ -214,11 +217,11 @@ const router = useRouter();
               <a href="#trainers" className="hover:text-[hsl(217,63%,47%)] transition-colors">Trainers</a>
               <a href="#membership" className="hover:text-[hsl(217,63%,47%)] transition-colors">Membership</a>
               <a href="#contact" className="hover:text-[hsl(217,63%,47%)] transition-colors">Location</a>
-              <Link href="/schedule" className="hover:text-[hsl(217,63%,47%)] transition-colors">Schedule</Link>
+              <a href="#schedule" className="hover:text-[hsl(217,63%,47%)] transition-colors">Schedule</a>
               <a href="#support" className="hover:text-[hsl(217,63%,47%)] transition-colors">Support Our Mission</a>
-              <a href="#contact" className="bg-[hsl(217,63%,47%)] hover:bg-[hsl(217,63%,42%)] px-6 py-2 rounded transition-colors w-full">
+              <button className="bg-[hsl(217,63%,47%)] hover:bg-[hsl(217,63%,42%)] px-6 py-2 rounded transition-colors w-full">
                 Join Now
-              </a>
+              </button>
             </div>
           )}
         </div>
@@ -243,13 +246,13 @@ const router = useRouter();
           More than self-defense. A community that trains, supports, and grows together.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#contact" className="bg-[hsl(217,63%,47%)] hover:bg-[hsl(217,63%,42%)] px-8 py-4 rounded-lg transition-colors flex items-center justify-center gap-2">
+            <button className="bg-[hsl(217,63%,47%)] hover:bg-[hsl(217,63%,42%)] px-8 py-4 rounded-lg transition-colors flex items-center justify-center gap-2">
               Start Free Trial
               <ChevronRight className="w-5 h-5" />
-            </a>
-            <a href="https://www.instagram.com/community_self_defense/" className="bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 px-8 py-4 rounded-lg transition-colors">
+            </button>
+            <button className="bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 px-8 py-4 rounded-lg transition-colors">
               Watch Classes
-            </a>
+            </button>
           </div>
         </div>
       </section>
@@ -267,11 +270,10 @@ const router = useRouter();
             {/* Left Side - Program List */}
             <div className="space-y-2">
               {programs.map((program, index) => (
-                <Link
+                <div
                   key={index}
-                  href={`/programs/${program.slug}`}
                   onMouseEnter={() => setHoveredProgram(index)}
-                  className={`block text-3xl md:text-4xl lg:text-5xl tracking-wider cursor-pointer transition-all duration-300 py-2 ${
+                  className={`text-3xl md:text-4xl lg:text-5xl tracking-wider cursor-pointer transition-all duration-300 py-2 ${
                     hoveredProgram === index 
                       ? 'text-[hsl(217,63%,47%)] font-bold pl-4' 
                       : 'text-gray-400 hover:text-gray-600'
@@ -283,7 +285,7 @@ const router = useRouter();
                   }}
                 >
                   {program.name}
-                </Link>
+                </div>
               ))}
             </div>
 
@@ -297,12 +299,9 @@ const router = useRouter();
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
               <div className="absolute bottom-8 left-8 right-8">
                 <h3 className="text-white text-3xl mb-2">{programs[hoveredProgram].name}</h3>
-                <Link 
-                  href={`/programs/${programs[hoveredProgram].slug}`}
-                  className="bg-[hsl(217,63%,47%)] hover:bg-[hsl(217,63%,42%)] text-white px-6 py-2 rounded-lg transition-colors flex items-center gap-2"
-                >
+                <button className="bg-[hsl(217,63%,47%)] hover:bg-[hsl(217,63%,42%)] text-white px-6 py-2 rounded-lg transition-colors flex items-center gap-2">
                   Learn More <ChevronRight className="w-4 h-4" />
-                </Link>
+                </button>
               </div>
             </div>
           </div>
@@ -392,9 +391,6 @@ const router = useRouter();
             <p className="text-gray-600 max-w-2xl mx-auto">
               Choose the plan that fits your training goals and schedule.
             </p>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              All membership payments are made in person.
-            </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -444,7 +440,7 @@ const router = useRouter();
 
           {/* Community Image */}
           <div className="mb-12 rounded-lg overflow-hidden shadow-xl">
-            <Image 
+            <img 
               src={supportMissionImage} 
               alt="Community Self Defense Family" 
               className="w-full h-auto"
@@ -476,16 +472,12 @@ const router = useRouter();
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href ="https://donate.stripe.com/28E00bgM6eDm6bc610cMM00" className="bg-[hsl(217,63%,47%)] hover:bg-[hsl(217,63%,42%)] text-white px-8 py-4 rounded-lg transition-colors">
+            <button className="bg-[hsl(217,63%,47%)] hover:bg-[hsl(217,63%,42%)] text-white px-8 py-4 rounded-lg transition-colors">
               Make a Donation
-            </a>
-
-{/* Possible future sponsor use */}
-
-{/* <button className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 rounded-lg transition-colors">
+            </button>
+            <button className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 rounded-lg transition-colors">
               Become a Sponsor
-            </button> */ }
-
+            </button>
           </div>
           
         </div>
@@ -508,7 +500,7 @@ const router = useRouter();
                 </div>
                 <div>
                   <h3 className="text-xl mb-2">Location</h3>
-                  <a href="https://maps.app.goo.gl/AJfB2LteKfkjThHWA" className="text-gray-600 hover:text-blue-900">15201 BEACH BLVD, STE C<br />WESTMINSTER, CA 92683</a>
+                  <p className="text-gray-600">15201 BEACH BLVD, STE C<br />WESTMINSTER, CA 92683</p>
                 </div>
               </div>
 
@@ -518,10 +510,10 @@ const router = useRouter();
                 </div>
                 <div>
                   <h3 className="text-xl mb-2">Phone</h3>
-                  <h2 className="text-xl mb-2">Header-Instructor: Sid Skrob</h2>
-                  <a href="tel:19497951110" className="text-gray-600 hover:text-blue-900">(949)-795-1110</a>
-                  <h2 className="text-xl mb-2">Co-Instructor: Myles Moudy</h2>
-                  <a href="tel:17143695220" className="text-gray-600 hover:text-blue-900">(714)-369-5220</a>
+                  <h2 className="text-x1 mb-2">Header-Instructor: Sid Skrob</h2>
+                  <p className="text-gray-600">(949)-795-1110</p>
+                  <h2 className="text-x1 mb-2">Co-Instructor: Myles Moudy</h2>
+                  <p className="text-gray-600">(714)-369-5220</p>
                 </div>
               </div>
 
@@ -531,7 +523,7 @@ const router = useRouter();
                 </div>
                 <div>
                   <h3 className="text-xl mb-2">Email</h3>
-                  <a href ="mailto:CSDONLINE2023@GMAIL.COM "className="text-gray-600 hover:text-blue-900">CSDONLINE2023@GMAIL.COM</a>
+                  <p className="text-gray-600">CSDONLINE2023@GMAIL.COM</p>
                 </div>
               </div>
 
@@ -547,66 +539,53 @@ const router = useRouter();
                   </p>
                 </div>
               </div>
-            </div>            
-<div className="bg-gray-50 rounded-lg p-8">
-  <h3 className="text-2xl mb-6">Request a Free Trial</h3>
+            </div>
 
-  <form className="space-y-4" onSubmit={handleSubmit}>
-    <div>
-      <label className="block text-sm mb-2">Name</label>
-      <input
-        name="name"
-        type="text"
-        required
-        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[hsl(217,63%,47%)]"
-        placeholder="Your name"
-      />
-    </div>
-
-    <div>
-      <label className="block text-sm mb-2">Email</label>
-      <input
-        name="email"
-        type="email"
-        required
-        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[hsl(217,63%,47%)]"
-        placeholder="your@email.com"
-      />
-    </div>
-
-    <div>
-      <label className="block text-sm mb-2">Phone</label>
-      <input
-        name="phone"
-        type="tel"
-        required
-        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[hsl(217,63%,47%)]"
-        placeholder="(555) 123-4567"
-      />
-    </div>
-
-    <div>
-      <label className="block text-sm mb-2">Interested In</label>
-      <select
-        name="interest"
-        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[hsl(217,63%,47%)]"
-      >
-        <option>MMA Fundamentals</option>
-        <option>Boxing & Striking</option>
-        <option>Kickboxing Fitness</option>
-        <option>Self-Defense</option>
-        <option>Not Sure Yet</option>
-      </select>
-    </div>
-
-    <button
-      type="submit"
-      className="w-full bg-[hsl(217,63%,47%)] hover:bg-[hsl(217,63%,42%)] text-white py-3 rounded-lg transition-colors"
-    >
-      Book Free Trial
-    </button>
-  </form>
-</div>
+            <div className="bg-gray-50 rounded-lg p-8">
+              <h3 className="text-2xl mb-6">Request a Free Trial</h3>
+              <form className="space-y-4">
+                <div>
+                  <label className="block text-sm mb-2">Name</label>
+                  <input 
+                    type="text" 
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[hsl(217,63%,47%)]"
+                    placeholder="Your name"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm mb-2">Email</label>
+                  <input 
+                    type="email" 
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[hsl(217,63%,47%)]"
+                    placeholder="your@email.com"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm mb-2">Phone</label>
+                  <input 
+                    type="tel" 
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[hsl(217,63%,47%)]"
+                    placeholder="(555) 123-4567"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm mb-2">Interested In</label>
+                  <select className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[hsl(217,63%,47%)]">
+                    <option>MMA Fundamentals</option>
+                    <option>Boxing & Striking</option>
+                    <option>Kickboxing Fitness</option>
+                    <option>Self-Defense</option>
+                    <option>Not Sure Yet</option>
+                  </select>
+                </div>
+                <button 
+                  type="submit"
+                  className="w-full bg-[hsl(217,63%,47%)] hover:bg-[hsl(217,63%,42%)] text-white py-3 rounded-lg transition-colors"
+             >
+                  Book Free Trial
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -617,7 +596,7 @@ const router = useRouter();
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <Image src={logo} alt="CSD Logo" width={48} height={48} />
+                <img src={logo} alt="CSD Logo" className="w-12 h-12" />
                 <div>
                   <div>CSD</div>
                   <div className="text-xs text-gray-400">Community-Self-Defense</div>
@@ -652,7 +631,7 @@ const router = useRouter();
               <h4 className="mb-4">Connect</h4>
               <ul className="space-y-2 text-gray-400 text-sm">
                 <li>Facebook</li>
-                <li><a href="https://www.instagram.com/community_self_defense/" className="hover:text-[hsl(217,63%,47%)]">Instagram</a></li>
+                <li>Instagram</li>
                 <li>Twitter</li>
                 <li>YouTube</li>
               </ul>
