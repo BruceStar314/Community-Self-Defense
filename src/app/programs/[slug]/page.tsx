@@ -3,8 +3,12 @@ import { notFound } from "next/navigation";
 import { Hero } from "./_components/Hero";
 import { Curriculum } from "./_components/Curriculum";
 import { FAQ } from "./_components/FAQ";
+import { ImageWithFallback } from "@/components/backup/ImageWithFallback";
+import { Link, Menu } from "lucide-react";
 import { Footer } from "./_components/Footer";
-
+import { Header } from "./_components/Header";
+const logo = "/images/CSD-logo.png";  
+ 
 const PROGRAMS = {
   mma: {
     name: "MMA",
@@ -335,36 +339,36 @@ const PROGRAMS = {
       },
     ],
   },
-  "self-defense": {
-    name: "Self Defense",
-    heroImage: "https://images.unsplash.com/photo-1765303206345-30d16b502d64?auto=format&fit=crop&w=1400&q=80",
-    description: "Practical skills for real-world situations.",
+  "kids-no-gi-jiu-jitsu": {
+    name: "Kids No Gi Jiu Jitsu",
+    heroImage: "https://images.unsplash.com/photo-1635962005741-a9c4904d110b?auto=format&fit=crop&w=1400&q=80",
+    description: "Submission grappling without the gi.",
     curriculum: [
       {
-        title: 'AWARENESS & AVOIDANCE',
-        description: 'Learn situational awareness, de-escalation techniques, and how to recognize and avoid dangerous situations.',
-        image: 'https://images.unsplash.com/photo-1765303206345-30d16b502d64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzZWxmJTIwZGVmZW5zZSUyMHRyYWluaW5nfGVufDF8fHx8MTc2NjIxNzU4MXww&ixlib=rb-4.1.0&q=80&w=1080',
+        title: 'GRIPLESS POSITIONS',
+        description: 'Learn to control and attack from all positions without gi grips, focusing on body control and underhooks.',
+        image: 'https://images.unsplash.com/photo-1699464676210-48cd0449df42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxCcmF6aWxpYW4lMjBKaXUlMjBKaXRzdSUyMHRyYWluaW5nfGVufDF8fHx8MTc2NjIxNzU3OXww&ixlib=rb-4.1.0&q=80&w=1080',
       },
       {
-        title: 'BASIC STRIKES & ESCAPES',
-        description: 'Master fundamental strikes and escape techniques designed to create distance and get to safety.',
-        image: 'https://images.unsplash.com/photo-1765303206345-30d16b502d64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzZWxmJTIwZGVmZW5zZSUyMHRyYWluaW5nfGVufDF8fHx8MTc2NjIxNzU4MXww&ixlib=rb-4.1.0&q=80&w=1080',
+        title: 'FUNDAMENTAL TECHNIQUES',
+        description: 'Learn fundamental no-gi grappling techniques including guard positions, escapes, and submissions.',
+        image: 'https://images.unsplash.com/photo-1699464676210-48cd0449df42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxCcmF6aWxpYW4lMjBKaXUlMjBKaXRzdSUyMHRyYWluaW5nfGVufDF8fHx8MTc2NjIxNzU3OXww&ixlib=rb-4.1.0&q=80&w=1080',
       },
       {
-        title: 'GROUND DEFENSE',
-        description: 'Learn essential techniques for defending yourself on the ground and getting back to your feet quickly.',
-        image: 'https://images.unsplash.com/photo-1550759807-50dc0b381a1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXJ0aWFsJTIwYXJ0cyUyMGluc3RydWN0b3J8ZW58MXx8fHwxNzY1OTYxMjI5fDA&ixlib=rb-4.1.0&q=80&w=1080',
+        title: 'CHARACTER BUILDING',
+        description: 'Develop respect, discipline, confidence, and leadership skills while learning martial arts in a safe environment.',
+        image: 'https://images.unsplash.com/photo-1699464676210-48cd0449df42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxCcmF6aWxpYW4lMjBKaXUlMjBKaXRzdSUyMHRyYWluaW5nfGVufDF8fHx8MTc2NjIxNzU3OXww&ixlib=rb-4.1.0&q=80&w=1080',
       },
       {
-        title: 'SCENARIO TRAINING',
-        description: 'Practice realistic self-defense scenarios with resistance training to build confidence and muscle memory.',
-        image: 'https://images.unsplash.com/photo-1765303206345-30d16b502d64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzZWxmJTIwZGVmZW5zZSUyMHRyYWluaW5nfGVufDF8fHx8MTc2NjIxNzU4MXww&ixlib=rb-4.1.0&q=80&w=1080',
+        title: 'LIVE ROLLING',
+        description: 'Test your no-gi skills with live rolling sessions, developing speed, fluidity, and submission awareness.',
+        image: 'https://images.unsplash.com/photo-1699464676210-48cd0449df42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxCcmF6aWxpYW4lMjBKaXUlMjBKaXRzdSUyMHRyYWluaW5nfGVufDF8fHx8MTc2NjIxNzU3OXww&ixlib=rb-4.1.0&q=80&w=1080',
       },
     ],
     faqs: [
       {
-        question: "Who is this for?",
-        answer: "Anyone looking for practical situational awareness and escape-focused skills.",
+        question: "Differences between No Gi and Gi?",
+        answer: "No Gi is without grips on a gi, while Gi is with grips on a gi. No Gi is faster and more dynamic, while Gi is more technical and controlled.",
       },
     ],
   },
@@ -382,6 +386,8 @@ export default async function ProgramPage({
 
   return (
     <div className="min-h-screen bg-black text-white">
+  {/* Navigation */}
+  <Header />
       <Hero 
         title={program.name}
         subtitle={program.description}

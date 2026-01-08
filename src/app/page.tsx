@@ -81,6 +81,11 @@ export default function App() {
       slug: "kids-muay-thai",
       image: "https://images.unsplash.com/photo-1635962005741-a9c4904d110b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWRzJTIwbWFydGlhbCUyMGFydHN8ZW58MXx8fHwxNzY2MTgwNDkxfDA&ixlib=rb-4.1.0&q=80&w=1080"
     },
+    {
+      name: "KIDS JIU JITSU",
+      slug: "kids-jiu-jitsu",
+      image: "https://images.unsplash.com/photo-1635962005741-a9c4904d110b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWRzJTIwbWFydGlhbCUyMGFydHN8ZW58MXx8fHwxNzY2MTgwNDkxfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
   ];
 
   const classes = [
