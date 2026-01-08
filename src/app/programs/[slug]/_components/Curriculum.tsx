@@ -1,29 +1,17 @@
 import { ImageWithFallback } from '@/components/backup/ImageWithFallback';
 
-const curriculumItems = [
-  {
-    title: 'PARTNER PADWORK',
-    description: 'Engage in drills with a partner to practice and perfect striking combinations, enhancing timing and coordination.',
-    image: 'https://images.unsplash.com/photo-1708134028754-5ba43093fedf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtbWElMjB0cmFpbmluZyUyMGd5bXxlbnwxfHx8fDE3Njc1Nzc0OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080',
-  },
-  {
-    title: 'TECHNIQUE',
-    description: 'Learn and refine fundamental and advanced Muay Thai techniques, including punches, kicks, elbows, and knees.',
-    image: 'https://images.unsplash.com/photo-1677184976710-0bb339946023?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWNrYm94aW5nJTIwd29ya291dHxlbnwxfHx8fDE3Njc1Nzc0OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080',
-  },
-  {
-    title: 'STRENGTH & CONDITIONING',
-    description: 'Participate in exercises designed to improve overall fitness, power, and endurance specific to Muay Thai.',
-    image: 'https://images.unsplash.com/photo-1708723636238-e4c384d5d428?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXJ0aWFsJTIwYXJ0cyUyMGd5bXxlbnwxfHx8fDE3Njc1NDIyMDR8MA&ixlib=rb-4.1.0&q=80&w=1080',
-  },
-  {
-    title: 'SPARRING',
-    description: 'Controlled sparring for sharpening your tactical edge. From technical drills to competitive sparring rounds under supervision.',
-    image: 'https://images.unsplash.com/photo-1696454411278-a64de1369e83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtdWF5JTIwdGhhaSUyMGZpZ2h0ZXIlMjB0cmFpbmluZ3xlbnwxfHx8fDE3Njc1Nzc0OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080',
-  },
-];
+type CurriculumItem = {
+  title: string;
+  description: string;
+  image: string;
+};
 
-export function Curriculum() {
+type CurriculumProps = {
+  curriculum: CurriculumItem[];
+  programName: string;
+};
+
+export function Curriculum({ curriculum, programName }: CurriculumProps) {
   return (
     <section className="py-24 bg-zinc-950 relative overflow-hidden">
       {/* Background Pattern */}
@@ -54,13 +42,13 @@ export function Curriculum() {
             CURATED <span className="text-blue-600">CURRICULUM</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-3xl mx-auto">
-            Our comprehensive training program covers all aspects of Muay Thai, from fundamentals to advanced techniques.
+            Our comprehensive training program covers all aspects of {programName}, from fundamentals to advanced techniques.
           </p>
         </div>
 
         {/* Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {curriculumItems.map((item, index) => (
+          {curriculum.map((item, index) => (
             <div key={index} className="group relative overflow-hidden bg-black rounded-lg">
               {/* Image */}
               <div className="aspect-[3/4] relative overflow-hidden">
