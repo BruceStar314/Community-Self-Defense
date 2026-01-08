@@ -27,34 +27,23 @@ export function Header() {
               priority
             />
             <div>
-              <div className="font-bold leading-tight">
+              <div className="font-bold">
                 Community-Self-Defense
               </div>
-              <div className="text-xs text-gray-400">CSD</div>
+              <div className="text-xs text-gray-400 ">CSD</div>
             </div>
           </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
-            <a href="#classes" className="hover:text-[hsl(217,63%,42%)]">Classes</a>
-            <a href="#trainers" className="hover:text-[hsl(217,63%,42%)]">Trainers</a>
-            <a href="#membership" className="hover:text-[hsl(217,63%,42%)]">Membership</a>
-            <a href="#contact" className="hover:text-[hsl(217,63%,42%)]">Location</a>
-
-            <Link href="/schedule" className="hover:text-[hsl(217,63%,42%)]">
-              Schedule
-            </Link>
-
-            <a href="#support" className="hover:text-[hsl(217,63%,42%)]">
-              Support Our Mission
-            </a>
-
-            <a
-              href="#contact"
-              className="bg-[hsl(217,63%,47%)] hover:bg-[hsl(217,63%,42%)] px-6 py-2 rounded font-semibold"
-            >
-              Join Now
-            </a>
+            <Link href="/#classes" className="hover:text-[hsl(217,63%,42%)]">Classes</Link>
+            <Link href="/#trainers" className="hover:text-[hsl(217,63%,42%)]">Trainers</Link>
+            <Link href="/#membership" className="hover:text-[hsl(217,63%,42%)]">Membership</Link>
+            <Link href="/#contact" className="hover:text-[hsl(217,63%,42%)]">Location</Link>   
+            <Link href="/schedule" className="hover:text-[hsl(217,63%,47%)] transition-colors">Schedule</Link>
+            <Link href="/#contact" className="hover:text-[hsl(217,63%,42%)]"> Contact Us</Link> 
+            <Link href="/#support" className="hover:text-[hsl(217,63%,42%)]">Support Our Mission</Link>
+            <Link href="/#contact" className="bg-[hsl(217,63%,42%)] hover:bg-[hsl(217,63%,42%)] px-6 py-2 rounded transition-colors">Join Now</Link>
           </div>
 
           {/* Mobile Button */}

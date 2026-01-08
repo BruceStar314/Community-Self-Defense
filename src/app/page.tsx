@@ -1,8 +1,6 @@
 "use client";
 
-import React from "react";
 import { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import {
   Menu,
@@ -19,7 +17,6 @@ import {
   Zap,
   Star,
 } from "lucide-react";
-import type { LucideIcon } from "lucide-react";
 import { ImageWithFallback } from "../components/backup/ImageWithFallback";
 
 // Image paths - using local images from public folder
@@ -229,12 +226,12 @@ export default function App() {
               <a href="#trainers" className="hover:text-[hsl(217,63%,47%)] transition-colors">Trainers</a>
               <a href="#membership" className="hover:text-[hsl(217,63%,47%)] transition-colors">Membership</a>
               <a href="#contact" className="hover:text-[hsl(217,63%,47%)] transition-colors">Location</a>
-              <a href="#schedule" className="hover:text-[hsl(217,63%,47%)] transition-colors">Schedule</a>
+              <Link href="/schedule" className="hover:text-[hsl(217,63%,47%)] transition-colors">Schedule</Link>
               <a href="#contact" className="hover:text-[hsl(217,63%,47%)] transition-colors">Contact Us</a>
               <a href="#support" className="hover:text-[hsl(217,63%,47%)] transition-colors">Support Our Mission</a>
-              <button className="bg-[hsl(217,63%,47%)] hover:bg-[hsl(217,63%,42%)] px-6 py-2 rounded transition-colors">
+              <Link href="#contact" className="bg-[hsl(217,63%,47%)] hover:bg-[hsl(217,63%,42%)] px-6 py-2 rounded transition-colors">
                 Join Now
-              </button>
+              </Link>
             </div>
 
             {/* Mobile Menu Button */}
@@ -253,7 +250,7 @@ export default function App() {
               <a href="#trainers" className="hover:text-[hsl(217,63%,47%)] transition-colors">Trainers</a>
               <a href="#membership" className="hover:text-[hsl(217,63%,47%)] transition-colors">Membership</a>
               <a href="#contact" className="hover:text-[hsl(217,63%,47%)] transition-colors">Location</a>
-              <a href="#schedule" className="hover:text-[hsl(217,63%,47%)] transition-colors">Schedule</a>
+              <Link href="/schedule" className="hover:text-[hsl(217,63%,47%)] transition-colors">Schedule</Link>
               <a href="#support" className="hover:text-[hsl(217,63%,47%)] transition-colors">Support Our Mission</a>
               <button className="bg-[hsl(217,63%,47%)] hover:bg-[hsl(217,63%,42%)] px-6 py-2 rounded transition-colors w-full">
                 Join Now
@@ -512,9 +509,15 @@ export default function App() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-[hsl(217,63%,47%)] hover:bg-[hsl(217,63%,42%)] text-white px-8 py-4 rounded-lg transition-colors">
-              Make a Donation
-            </button>
+          <button 
+          onClick={() => window.open( "https://donate.stripe.com/28E00bgM6eDm6bc610cMM00", "_blank", "noopener,noreferrer"
+    )
+  }
+  className="bg-[hsl(217,63%,47%)] hover:bg-[hsl(217,63%,42%)] text-white px-8 py-4 rounded-lg transition-colors"
+>
+  Make a Donation
+</button>
+
             {/*    <button className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 rounded-lg transition-colors">
               Become a Sponsor
             </button> 
@@ -706,7 +709,7 @@ export default function App() {
           </div>
 
           <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
-            <p>&copy; 2025 Community-Self-Defense. All rights reserved.</p>
+            <p>&copy; 2026 Community-Self-Defense. All rights reserved.</p>
           </div>
         </div>
       </footer>
