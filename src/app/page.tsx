@@ -280,11 +280,11 @@ export default function App() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-[hsl(217,63%,47%)] hover:bg-[hsl(217,63%,42%)] px-8 py-4 rounded-lg transition-colors flex items-center justify-center gap-2">
-              Start Free Trial
-              <ChevronRight className="w-5 h-5" />
-            </button>
+              <a href="#contact">Start Free Trial</a>
+              <ChevronRight className="w-5 h-5" /> 
+            </button> 
             <button className="bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 px-8 py-4 rounded-lg transition-colors">
-              Watch Classes
+              <a href="https://www.instagram.com/community_self_defense/" target="_blank" rel="noopener noreferrer">Watch Classes</a>
             </button>
           </div>
         </div>
