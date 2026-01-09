@@ -47,10 +47,10 @@ export function Hero({ title, subtitle, image }: HeroProps) {
 
           <div className="flex gap-4">
             <button className="px-8 py-4 bg-blue-600 text-white uppercase tracking-wider text-sm font-semibold hover:bg-blue-700 transition-colors">
-              Start Free Trial
+              <a href="/#contact">Start Free Trial</a>
             </button>
             <button className="px-8 py-4 border-2 border-white text-white uppercase tracking-wider text-sm font-semibold hover:bg-white hover:text-black transition-colors">
-              View Schedule
+              <a href="/schedule">View Schedule</a>
             </button>
           </div>
         </div>
