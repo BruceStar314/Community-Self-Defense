@@ -31,6 +31,31 @@ const secretaryImage = { src: "/images/Secretary.webp" };
 export default function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [hoveredProgram, setHoveredProgram] = useState<number | null>(0);
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setLoading(true);
+    const formData = new FormData(e.currentTarget);
+    const res = await fetch("/api/free-trial", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: formData.get("name"),
+        email: formData.get("email"),
+        phone: formData.get("phone"),
+        interest: formData.get("interest"),
+      }),
+    });
+
+    setLoading(false);
+
+    if (res.ok) {
+      setSuccess(true);
+      e.currentTarget.reset();
+    }
+  }
+
 
   const programs = [
     {
@@ -428,6 +453,9 @@ export default function App() {
             <p className="text-gray-600 max-w-2xl mx-auto">
               Choose the plan that fits your training goals and schedule.
             </p>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              "All purchase are done in person"
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -611,13 +639,16 @@ export default function App() {
               </div>
             </div>
 
+            {/*Request Form*/}
             <div className="bg-gray-50 rounded-lg p-8">
               <h3 className="text-2xl mb-6 text-black">Request a Free Trial</h3>
-              <form className="space-y-4">
+              <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
                   <label className="block text-sm mb-2 text-black">Name</label>
                   <input 
+                    name="name"
                     type="text" 
+                    required
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-white text-black focus:outline-none focus:ring-2 focus:ring-[hsl(217,63%,47%)]"
                     placeholder="Your name"
                   />
@@ -625,7 +656,9 @@ export default function App() {
                 <div>
                   <label className="block text-sm mb-2 text-black">Email</label>
                   <input 
+                    name="email"
                     type="email" 
+                    required
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-white text-black focus:outline-none focus:ring-2 focus:ring-[hsl(217,63%,47%)]"
                     placeholder="your@email.com"
                   />
@@ -633,14 +666,18 @@ export default function App() {
                 <div>
                   <label className="block text-sm mb-2 text-black">Phone</label>
                   <input 
+                    name="phone"
                     type="tel" 
+                    required
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-white text-black focus:outline-none focus:ring-2 focus:ring-[hsl(217,63%,47%)]"
                     placeholder="(555) 123-4567"
                   />
                 </div>
                 <div>
                   <label className="block text-sm mb-2 text-black">Interested In</label>
-                  <select className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-white text-black focus:outline-none focus:ring-2 focus:ring-[hsl(217,63%,47%)]">
+                  <select
+                   name="interest"
+                   className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-white text-black focus:outline-none focus:ring-2 focus:ring-[hsl(217,63%,47%)]">
                     <option>MMA Fundamentals</option>
                     <option>Boxing & Striking</option>
                     <option>Kickboxing Fitness</option>
@@ -650,10 +687,17 @@ export default function App() {
                 </div>
                 <button 
                   type="submit"
+                  disabled={loading}
                   className="w-full bg-[hsl(217,63%,47%)] hover:bg-[hsl(217,63%,42%)] text-white py-3 rounded-lg transition-colors"
              >
-                  Book Free Trial
+                  {loading ? "Submitting" : "Book Free Trial"}
                 </button>
+
+                {success && (
+                   <p className="text-green-600 text-center">
+                   Request sent successfully!
+                 </p>
+                )}
               </form>
             </div>
           </div>
