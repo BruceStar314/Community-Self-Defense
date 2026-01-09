@@ -570,7 +570,7 @@ export default function App() {
                 </div>
                 <div>
                   <h3 className="text-xl mb-2 text-black">Location</h3>
-                  <p className="text-gray-600">15201 BEACH BLVD, STE C<br />WESTMINSTER, CA 92683</p>
+                  <p className="text-gray-600 hover:text-[hsl(217,63%,47%)]"><a href="https://maps.app.goo.gl/vPChYm9coVpL1qWQA" target="_blank" rel="noopener noreferrer">15201 BEACH BLVD, STE C<br />WESTMINSTER, CA 92683</a></p>
                 </div>
               </div>
 
@@ -581,9 +581,9 @@ export default function App() {
                 <div>
                   <h3 className="text-xl mb-2 text-black">Phone</h3>
                   <h2 className="text-xl mb-2 text-black">Header-Instructor: Sid Skrob</h2>
-                  <p className="text-gray-600">(949)-795-1110</p>
+                  <p className="text-gray-600 hover:text-[hsl(217,63%,47%)]"><a href="tel:19497951110">(949)-795-1110</a></p>
                   <h2 className="text-xl mb-2 text-black">Co-Instructor: Myles Moudy</h2>
-                  <p className="text-gray-600">(714)-369-5220</p>
+                  <p className="text-gray-600 hover:text-[hsl(217,63%,47%)]"><a href="tel:17143695220">(714)-369-5220</a></p>
                 </div>
               </div>
 
@@ -593,7 +593,7 @@ export default function App() {
                 </div>
                 <div>
                   <h3 className="text-xl mb-2 text-black">Email</h3>
-                  <p className="text-gray-600">CSDONLINE2023@GMAIL.COM</p>
+                  <p><a href="mailto:CSDONLINE2023@GMAIL.COM" className="text-gray-600 hover:text-[hsl(217,63%,47%)]">CSDONLINE2023@GMAIL.COM</a></p>
                 </div>
               </div>
 
