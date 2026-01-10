@@ -26,7 +26,7 @@ const PROGRAMS = {
         image: 'https://images.unsplash.com/photo-1699464676210-48cd0449df42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxCcmF6aWxpYW4lMjBKaXUlMjBKaXRzdSUyMHRyYWluaW5nfGVufDF8fHx8MTc2NjIxNzU3OXww&ixlib=rb-4.1.0&q=80&w=1080',
       },
       {
-        title: 'CAGE WORK',
+        title: 'WALL WORK',
         description: 'Develop skills specific to MMA competition including cage wrestling, wall walking, and clinch work.',
         image: 'https://images.unsplash.com/photo-1688141402330-f4ed03f6bbf9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxNTUElMjBjYWdlJTIwZmlnaHRpbmd8ZW58MXx8fHwxNzY2MjE3NTgwfDA&ixlib=rb-4.1.0&q=80&w=1080',
       },
@@ -47,7 +47,7 @@ const PROGRAMS = {
       },
       {
         question: "What should I bring to class?",
-        answer: "Wear comfortable athletic clothing, bring water, and we'll provide all necessary training equipment.",
+        answer: "Wear comfortable athletic clothing, bring water, MMA gloves,Shin guards, and Mouth Guard.",
       },
     ],
   },
@@ -84,7 +84,7 @@ const PROGRAMS = {
       },
       {
         question: "Do I need a gi?",
-        answer: "We offer both gi and no-gi classes. Beginners can start with either, and we have loaner gis available.",
+        answer: "We offer both gi and no-gi classes. Beginners can start with either.",
       },
       {
         question: "How long does it take to get a belt?",
@@ -129,7 +129,7 @@ const PROGRAMS = {
       },
       {
         question: "What equipment do I need?",
-        answer: "We provide all equipment including gloves, shin guards, and pads. Just bring comfortable workout clothes and water.",
+        answer: "Boxing or Thai gloves, shin guards, and bring comfortable workout clothes and water.",
       },
     ],
   },

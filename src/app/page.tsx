@@ -749,7 +749,7 @@ export default function App() {
                 <li>Twitter</li>
                 <li>YouTube</li>
               </ul>
-            </div>
+            </div> 
           </div>
 
           <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
