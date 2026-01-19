@@ -14,7 +14,7 @@ export async function POST(req: Request) {
 
   await transporter.sendMail({
     from: `"Free Trial Request" <${process.env.EMAIL_USER}>`,
-    to: "js.python03@gmail.com",
+    to: "CSDONLINE2023@GMAIL.COM",
     subject: "New Free Trial Request",
     html: `
       <h2>New Free Trial Request</h2>
