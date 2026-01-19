@@ -632,8 +632,9 @@ export default function App() {
                 <div>
                   <h3 className="text-xl mb-2 text-black">Hours</h3>
                   <p className="text-gray-600">
-                    Mon-Fri: 6:00 AM - 10:00 PM<br />
-                    Sat-Sun: 8:00 AM - 8:00 PM
+                    Mon-Fri: 6:00 AM - 9:00 PM<br />
+                    Sat: 10:00 AM - 12:00 PM<br />
+                    Sun: Closed
                   </p>
                 </div>
               </div>
