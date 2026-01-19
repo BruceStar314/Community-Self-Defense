@@ -215,22 +215,22 @@ const PROGRAMS = {
       {
         title: 'TAKEDOWN FUNDAMENTALS',
         description: 'Master essential takedowns including single legs, double legs, and throws with proper set-up and execution.',
-        image: 'https://images.unsplash.com/photo-1615117270691-3bc3cb65f2e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3cmVzdGxpbmclMjBncmFwcGxpbmd8ZW58MXx8fHwxNzY2MjE3NTgwfDA&ixlib=rb-4.1.0&q=80&w=1080',
+        image: 'https://images.unsplash.com/photo-1736723212593-2183d03535df?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
       },
       {
         title: 'POSITIONAL CONTROL',
         description: 'Learn to maintain dominant positions including top control, side control, and back control with pressure.',
-        image: 'https://images.unsplash.com/photo-1615117270691-3bc3cb65f2e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3cmVzdGxpbmclMjBncmFwcGxpbmd8ZW58MXx8fHwxNzY2MjE3NTgwfDA&ixlib=rb-4.1.0&q=80&w=1080',
+        image: 'https://images.unsplash.com/photo-1542468019-550cb643a5e3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
       },
       {
         title: 'DEFENSE & ESCAPES',
         description: 'Develop defensive skills including sprawls, whizzers, and escapes from bottom positions.',
-        image: 'https://images.unsplash.com/photo-1615117270691-3bc3cb65f2e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3cmVzdGxpbmclMjBncmFwcGxpbmd8ZW58MXx8fHwxNzY2MjE3NTgwfDA&ixlib=rb-4.1.0&q=80&w=1080',
+        image: 'https://images.unsplash.com/photo-1533777528790-c6996cffa35e?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
       },
       {
         title: 'LIVE WRESTLING',
         description: 'Practice takedowns and positional control in live wrestling rounds to build mat awareness and timing.',
-        image: 'https://images.unsplash.com/photo-1615117270691-3bc3cb65f2e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3cmVzdGxpbmclMjBncmFwcGxpbmd8ZW58MXx8fHwxNzY2MjE3NTgwfDA&ixlib=rb-4.1.0&q=80&w=1080',
+        image: 'https://images.unsplash.com/photo-1764908912127-885314cb5c21?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
       },
     ],
     faqs: [
