@@ -61,52 +61,52 @@ export default function App() {
     {
       name: "BRAZILIAN JIU JITSU",
       slug: "brazilian-jiu-jitsu",
-      image: "https://images.unsplash.com/photo-1699464676210-48cd0449df42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxCcmF6aWxpYW4lMjBKaXUlMjBKaXRzdSUyMHRyYWluaW5nfGVufDF8fHx8MTc2NjIxNzU3OXww&ixlib=rb-4.1.0&q=80&w=1080"
+      image: "https://www.nagafighter.com/wp-content/uploads/bjj-scoring-scaled.jpg"
     },
     {
       name: "MUAY THAI",
       slug: "muay-thai",
-      image: "https://images.unsplash.com/photo-1696454411278-a64de1369e83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxNdWF5JTIwVGhhaSUyMGtpY2tib3hpbmd8ZW58MXx8fHwxNzY2MjE3NTc5fDA&ixlib=rb-4.1.0&q=80&w=1080"
+      image: "https://www.kstmuaythai.com/wp-content/uploads/2020/02/LINE_ALBUM_KST-walk_241014_12.jpg"
     },
     {
       name: "BOXING",
       slug: "boxing",
-      image: "https://images.unsplash.com/photo-1570312530820-d0f15f33a4a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxib3hpbmclMjB0cmFpbmluZyUyMGd5bXxlbnwxfHx8fDE3NjYxNDIxMjB8MA&ixlib=rb-4.1.0&q=80&w=1080"
+      image: "https://cdn.evolve-mma.com/wp-content/uploads/2023/09/canelo-boxing-edited.jpg"
     },
     {
       name: "MMA",
       slug: "mma",
-      image: "https://images.unsplash.com/photo-1688141402330-f4ed03f6bbf9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxNTUElMjBjYWdlJTIwZmlnaHRpbmd8ZW58MXx8fHwxNzY2MjE3NTgwfDA&ixlib=rb-4.1.0&q=80&w=1080"
+      image: "https://cdn.britannica.com/14/190014-050-31961004/trading-punches-American-Ronda-Rousey-knockout-UFC-2015.jpg"
     },
     {
       name: "WRESTLING",
       slug: "wrestling",
-      image: "https://images.unsplash.com/photo-1615117270691-3bc3cb65f2e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3cmVzdGxpbmclMjBncmFwcGxpbmd8ZW58MXx8fHwxNzY2MjE3NTgwfDA&ixlib=rb-4.1.0&q=80&w=1080"
+      image: "https://cdn.evolve-mma.com/wp-content/uploads/2025/02/greco-roman-wrestling-1.jpg"
     },
     {
       name: "KICKBOXING",
       slug: "kickboxing",
-      image: "https://images.unsplash.com/photo-1677184976710-0bb339946023?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWNrYm94aW5nJTIwZml0bmVzc3xlbnwxfHx8fDE3NjYyMTc1ODB8MA&ixlib=rb-4.1.0&q=80&w=1080"
+      image: "https://cdn.evolve-mma.com/wp-content/uploads/2024/07/superbon-kickboxing.jpg"
     },
     {
       name: "NO GI",
       slug: "no-gi",
-      image: "https://images.unsplash.com/photo-1699464676210-48cd0449df42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxCcmF6aWxpYW4lMjBKaXUlMjBKaXRzdSUyMHRyYWluaW5nfGVufDF8fHx8MTc2NjIxNzU3OXww&ixlib=rb-4.1.0&q=80&w=1080"
+      image: "https://www.nagafighter.com/wp-content/uploads/578A5856-2-scaled.jpg"
     },
     {
       name: "KIDS JIU JITSU",
       slug: "kids-jiu-jitsu",
-      image: "https://images.unsplash.com/photo-1635962005741-a9c4904d110b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWRzJTIwbWFydGlhbCUyMGFydHN8ZW58MXx8fHwxNzY2MTgwNDkxfDA&ixlib=rb-4.1.0&q=80&w=1080"
+      image: "https://lbnyjj.com/wordpress/wp-content/uploads/2015/07/pic-home-1a.jpg"
     },
     {
       name: "KIDS MUAY THAI",
       slug: "kids-muay-thai",
-      image: "https://images.unsplash.com/photo-1635962005741-a9c4904d110b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWRzJTIwbWFydGlhbCUyMGFydHN8ZW58MXx8fHwxNzY2MTgwNDkxfDA&ixlib=rb-4.1.0&q=80&w=1080"
+      image: "https://cdn.i-scmp.com/sites/default/files/styles/1020x680/public/images/methode/2018/10/12/1feed3ac-cdeb-11e8-9460-2e07e264bd11_1280x720_214944.jpg?itok=KBVoqHxo"
     },
     {
-      name: "KIDS JIU JITSU",
-      slug: "kids-jiu-jitsu",
-      image: "https://images.unsplash.com/photo-1635962005741-a9c4904d110b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWRzJTIwbWFydGlhbCUyMGFydHN8ZW58MXx8fHwxNzY2MTgwNDkxfDA&ixlib=rb-4.1.0&q=80&w=1080"
+      name: "KIDS NO GI JIU JITSU",
+      slug: "kids-no-gi-jiu-jitsu",
+      image: "https://www.dragonmartialarts.uk/wp-content/uploads/2021/10/brazilian-jiujitsu-gloucester-kids-2.jpg"
     },
   ];
 

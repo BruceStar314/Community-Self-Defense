@@ -12,7 +12,7 @@ const logo = "/images/CSD-logo.png";
 const PROGRAMS = {
   mma: {
     name: "MMA",
-    heroImage: "https://images.unsplash.com/photo-1688141402330-f4ed03f6bbf9?auto=format&fit=crop&w=1400&q=80",
+    heroImage: "https://cdn.britannica.com/14/190014-050-31961004/trading-punches-American-Ronda-Rousey-knockout-UFC-2015.jpg",
     description: "Train all aspects of mixed martial arts.",
     curriculum: [
       {
@@ -53,7 +53,7 @@ const PROGRAMS = {
   },
   "brazilian-jiu-jitsu": {
     name: "Brazilian Jiu Jitsu",
-    heroImage: "https://images.unsplash.com/photo-1699464676210-48cd0449df42?auto=format&fit=crop&w=1400&q=80",
+    heroImage: "https://www.nagafighter.com/wp-content/uploads/bjj-scoring-scaled.jpg",
     description: "Master grappling, submissions, and control.",
     curriculum: [
       {
@@ -94,7 +94,7 @@ const PROGRAMS = {
   },
   "muay-thai": {
     name: "Muay Thai",
-    heroImage: "https://images.unsplash.com/photo-1696454411278-a64de1369e83?auto=format&fit=crop&w=1400&q=80",
+    heroImage: "https://www.kstmuaythai.com/wp-content/uploads/2020/02/LINE_ALBUM_KST-walk_241014_12.jpg",
     description: "The art of eight limbs.",
     curriculum: [
       {
@@ -135,7 +135,7 @@ const PROGRAMS = {
   },
   boxing: {
     name: "Boxing",
-    heroImage: "https://images.unsplash.com/photo-1570312530820-d0f15f33a4a9?auto=format&fit=crop&w=1400&q=80",
+    heroImage: "https://cdn.evolve-mma.com/wp-content/uploads/2023/09/canelo-boxing-edited.jpg",
     description: "Sharpen striking, footwork, and timing.",
     curriculum: [
       {
@@ -172,28 +172,28 @@ const PROGRAMS = {
   },
   kickboxing: {
     name: "Kickboxing",
-    heroImage: "https://images.unsplash.com/photo-1677184976710-0bb339946023?auto=format&fit=crop&w=1400&q=80",
+    heroImage: "https://cdn.evolve-mma.com/wp-content/uploads/2024/07/superbon-kickboxing.jpg",
     description: "High-energy striking that blends boxing and powerful kicks.",
     curriculum: [
       {
         title: 'STRIKING COMBINATIONS',
         description: 'Learn dynamic punch and kick combinations that blend boxing fundamentals with powerful kicking techniques.',
-        image: 'https://images.unsplash.com/photo-1677184976710-0bb339946023?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWNrYm94aW5nJTIwZml0bmVzc3xlbnwxfHx8fDE3NjYyMTc1ODB8MA&ixlib=rb-4.1.0&q=80&w=1080',
+        image: 'https://images.unsplash.com/photo-1575800605380-ca1d27744f2c?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
       },
       {
         title: 'KICKING TECHNIQUES',
         description: 'Master roundhouse kicks, front kicks, side kicks, and spinning techniques with proper form and power.',
-        image: 'https://images.unsplash.com/photo-1765303237614-cce413f38aec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWNrYm94aW5nJTIwdHJhaW5pbmd8ZW58MXx8fHwxNzY1OTE5NTA5fDA&ixlib=rb-4.1.0&q=80&w=1080',
+        image: 'https://images.unsplash.com/photo-1620123646588-b9117246a9d0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGtpY2tib3hpbmd8ZW58MHx8MHx8fDA%3D'
       },
       {
         title: 'CARDIO & CONDITIONING',
         description: 'High-intensity training sessions that combine technique work with cardiovascular conditioning for maximum fitness.',
-        image: 'https://images.unsplash.com/photo-1677184976710-0bb339946023?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWNrYm94aW5nJTIwd29ya291dHxlbnwxfHx8fDE3Njc1Nzc0OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080',
+        image: 'https://images.unsplash.com/photo-1686133368810-24f662f65cad?q=80&w=686&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
       },
       {
         title: 'PAD WORK & SPARRING',
         description: 'Apply techniques through pad work drills and controlled sparring to build confidence and skill.',
-        image: 'https://images.unsplash.com/photo-1765303237614-cce413f38aec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWNrYm94aW5nJTIwdHJhaW5pbmd8ZW58MXx8fHwxNzY1OTE5NTA5fDA&ixlib=rb-4.1.0&q=80&w=1080',
+        image: 'https://images.unsplash.com/photo-1758778933112-af9fde620101?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
       },
     ],
     faqs: [
@@ -209,7 +209,7 @@ const PROGRAMS = {
   },
   wrestling: {
     name: "Wrestling",
-    heroImage: "https://images.unsplash.com/photo-1615117270691-3bc3cb65f2e3?auto=format&fit=crop&w=1400&q=80",
+    heroImage: "https://cdn.evolve-mma.com/wp-content/uploads/2025/02/greco-roman-wrestling-1.jpg",
     description: "Control, takedowns, and top pressure.",
     curriculum: [
       {
@@ -242,28 +242,28 @@ const PROGRAMS = {
   },
   "no-gi": {
     name: "No Gi",
-    heroImage: "https://images.unsplash.com/photo-1699464676210-48cd0449df42?auto=format&fit=crop&w=1400&q=80",
+    heroImage: "https://www.nagafighter.com/wp-content/uploads/578A5856-2-scaled.jpg",
     description: "Submission grappling without the gi.",
     curriculum: [
       {
         title: 'GRIPLESS POSITIONS',
         description: 'Learn to control and attack from all positions without gi grips, focusing on body control and underhooks.',
-        image: 'https://images.unsplash.com/photo-1699464676210-48cd0449df42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxCcmF6aWxpYW4lMjBKaXUlMjBKaXRzdSUyMHRyYWluaW5nfGVufDF8fHx8MTc2NjIxNzU3OXww&ixlib=rb-4.1.0&q=80&w=1080',
+        image: 'https://images.unsplash.com/photo-1682545888368-587f56efd06e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
       },
       {
         title: 'LEG LOCKS',
         description: 'Develop a comprehensive leg lock game including heel hooks, toe holds, and knee bars for submission threats.',
-        image: 'https://images.unsplash.com/photo-1699464676210-48cd0449df42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxCcmF6aWxpYW4lMjBKaXUlMjBKaXRzdSUyMHRyYWluaW5nfGVufDF8fHx8MTc2NjIxNzU3OXww&ixlib=rb-4.1.0&q=80&w=1080',
+        image: 'https://www.elitesports.com/cdn/shop/articles/ultimate-guide-bjj-leg-locks-escape.jpg?v=1736960950&width=1000'
       },
       {
         title: 'FAST PACED EXCHANGES',
         description: 'Adapt to the faster pace of no-gi grappling with emphasis on scrambles, transitions, and athletic movement.',
-        image: 'https://images.unsplash.com/photo-1699464676210-48cd0449df42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxCcmF6aWxpYW4lMjBKaXUlMjBKaXRzdSUyMHRyYWluaW5nfGVufDF8fHx8MTc2NjIxNzU3OXww&ixlib=rb-4.1.0&q=80&w=1080',
+        image: 'https://carlsongracieteamhouston.com/wp-content/uploads/2024/07/Dynamic1-1024x683.png'
       },
       {
         title: 'LIVE ROLLING',
         description: 'Test your no-gi skills with live rolling sessions, developing speed, fluidity, and submission awareness.',
-        image: 'https://images.unsplash.com/photo-1699464676210-48cd0449df42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxCcmF6aWxpYW4lMjBKaXUlMjBKaXRzdSUyMHRyYWluaW5nfGVufDF8fHx8MTc2NjIxNzU3OXww&ixlib=rb-4.1.0&q=80&w=1080',
+        image: 'https://warriorcollective.co.uk/cdn/shop/articles/PI-Copy-1-Web_263e5f95-576c-4d15-9a5a-4f7d3561b70e.jpg?v=1678905826&width=1100'
       },
     ],
     faqs: [
@@ -275,28 +275,28 @@ const PROGRAMS = {
   },
   "kids-jiu-jitsu": {
     name: "Kids Jiu Jitsu",
-    heroImage: "https://images.unsplash.com/photo-1635962005741-a9c4904d110b?auto=format&fit=crop&w=1400&q=80",
+    heroImage: "https://lbnyjj.com/wordpress/wp-content/uploads/2015/07/pic-home-1a.jpg",
     description: "Confidence, discipline, and fun on the mats.",
     curriculum: [
       {
         title: 'FUN FUNDAMENTALS',
         description: 'Age-appropriate introduction to BJJ positions and movements through games and engaging drills.',
-        image: 'https://images.unsplash.com/photo-1635962005741-a9c4904d110b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWRzJTIwbWFydGlhbCUyMGFydHN8ZW58MXx8fHwxNzY2MTgwNDkxfDA&ixlib=rb-4.1.0&q=80&w=1080',
+        image: 'https://cdn.shopify.com/s/files/1/0649/5197/6188/files/kids-jiu-jitsu_jpeg.webp?v=1657062915'
       },
       {
         title: 'BASIC TECHNIQUES',
         description: 'Learn fundamental BJJ techniques including guard positions, escapes, and age-appropriate submissions.',
-        image: 'https://images.unsplash.com/photo-1635962005741-a9c4904d110b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWRzJTIwbWFydGlhbCUyMGFydHN8ZW58MXx8fHwxNzY2MTgwNDkxfDA&ixlib=rb-4.1.0&q=80&w=1080',
+        image: 'https://jiujitsuhaus.com/wp-content/uploads/2023/06/signed-url-redirect-1.jpg'
       },
       {
         title: 'CHARACTER BUILDING',
         description: 'Develop respect, discipline, confidence, and leadership skills while learning martial arts in a safe environment.',
-        image: 'https://images.unsplash.com/photo-1635962005741-a9c4904d110b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWRzJTIwbWFydGlhbCUyMGFydHN8ZW58MXx8fHwxNzY2MTgwNDkxfDA&ixlib=rb-4.1.0&q=80&w=1080',
+        image: 'https://gentleartdojoflorida.com/wp-content/uploads/2021/11/KIDS-BJJ-5-8-4.jpg'
       },
       {
         title: 'BELT PROGRESSION',
         description: 'Progress through the belt system with structured testing and recognition for hard work and improvement.',
-        image: 'https://images.unsplash.com/photo-1635962005741-a9c4904d110b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWRzJTIwbWFydGlhbCUyMGFydHN8ZW58MXx8fHwxNzY2MTgwNDkxfDA&ixlib=rb-4.1.0&q=80&w=1080',
+        image: 'https://cobrinhabjjlasvegas.com/wp-content/uploads/2022/07/279172503_5368331386563747_1328396224980389663_n_jpg-e1658159845881-1134x1250.jpg'
       },
     ],
     faqs: [
@@ -308,28 +308,28 @@ const PROGRAMS = {
   },
   "kids-muay-thai": {
     name: "Kids Muay Thai",
-    heroImage: "https://images.unsplash.com/photo-1635962005741-a9c4904d110b?auto=format&fit=crop&w=1400&q=80",
+    heroImage: "https://cdn.i-scmp.com/sites/default/files/styles/1020x680/public/images/methode/2018/10/12/1feed3ac-cdeb-11e8-9460-2e07e264bd11_1280x720_214944.jpg?itok=KBVoqHxo",
     description: "Striking fundamentals in a safe setting.",
     curriculum: [
       {
         title: 'BASIC STRIKES',
         description: 'Learn fundamental Muay Thai strikes including punches and kicks with emphasis on proper form and safety.',
-        image: 'https://images.unsplash.com/photo-1635962005741-a9c4904d110b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWRzJTIwbWFydGlhbCUyMGFydHN8ZW58MXx8fHwxNzY2MTgwNDkxfDA&ixlib=rb-4.1.0&q=80&w=1080',
+        image: 'https://cdn.evolve-mma.com/wp-content/uploads/2020/09/mt-kid-punching.jpg'
       },
       {
         title: 'STANCE & FOOTWORK',
         description: 'Develop proper Muay Thai stance, balance, and footwork through fun drills and movement exercises.',
-        image: 'https://images.unsplash.com/photo-1635962005741-a9c4904d110b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWRzJTIwbWFydGlhbCUyMGFydHN8ZW58MXx8fHwxNzY2MTgwNDkxfDA&ixlib=rb-4.1.0&q=80&w=1080',
+        image: 'https://arashido.com/wp/wp-content/uploads/2021/07/Rowen-2501.jpg'
       },
       {
         title: 'CONDITIONING FUN',
         description: 'Improve fitness, coordination, and athleticism through age-appropriate conditioning games and exercises.',
-        image: 'https://images.unsplash.com/photo-1635962005741-a9c4904d110b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWRzJTIwbWFydGlhbCUyMGFydHN8ZW58MXx8fHwxNzY2MTgwNDkxfDA&ixlib=rb-4.1.0&q=80&w=1080',
+        image: 'https://cdn.shopify.com/s/files/1/0253/7245/9094/files/muay_thai_safe_for_kids.jpg?v=1641796396'
       },
       {
         title: 'LIGHT CONTACT DRILLS',
         description: 'Practice techniques with carefully supervised light contact drills in a controlled, safe environment.',
-        image: 'https://images.unsplash.com/photo-1635962005741-a9c4904d110b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWRzJTIwbWFydGlhbCUyMGFydHN8ZW58MXx8fHwxNzY2MTgwNDkxfDA&ixlib=rb-4.1.0&q=80&w=1080',
+        image: 'https://switchfitsd.com/wp-content/uploads/2023/11/switch-78-scaled-1.jpg'
       },
     ],
     faqs: [
@@ -341,28 +341,28 @@ const PROGRAMS = {
   },
   "kids-no-gi-jiu-jitsu": {
     name: "Kids No Gi Jiu Jitsu",
-    heroImage: "https://images.unsplash.com/photo-1635962005741-a9c4904d110b?auto=format&fit=crop&w=1400&q=80",
+    heroImage: "https://www.dragonmartialarts.uk/wp-content/uploads/2021/10/brazilian-jiujitsu-gloucester-kids-2.jpg",
     description: "Submission grappling without the gi.",
     curriculum: [
       {
         title: 'GRIPLESS POSITIONS',
         description: 'Learn to control and attack from all positions without gi grips, focusing on body control and underhooks.',
-        image: 'https://images.unsplash.com/photo-1699464676210-48cd0449df42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxCcmF6aWxpYW4lMjBKaXUlMjBKaXRzdSUyMHRyYWluaW5nfGVufDF8fHx8MTc2NjIxNzU3OXww&ixlib=rb-4.1.0&q=80&w=1080',
+        image: 'https://nationathletic.com/cdn/shop/files/jiujitsu.junior_1754413438369.jpg?v=1757352497&width=1440'
       },
       {
         title: 'FUNDAMENTAL TECHNIQUES',
         description: 'Learn fundamental no-gi grappling techniques including guard positions, escapes, and submissions.',
-        image: 'https://images.unsplash.com/photo-1699464676210-48cd0449df42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxCcmF6aWxpYW4lMjBKaXUlMjBKaXRzdSUyMHRyYWluaW5nfGVufDF8fHx8MTc2NjIxNzU3OXww&ixlib=rb-4.1.0&q=80&w=1080',
+        image: 'https://shop.jiujitsumodern.com/cdn/shop/products/DSC05189.jpg?v=1743018438&width=1445'
       },
       {
         title: 'CHARACTER BUILDING',
         description: 'Develop respect, discipline, confidence, and leadership skills while learning martial arts in a safe environment.',
-        image: 'https://images.unsplash.com/photo-1699464676210-48cd0449df42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxCcmF6aWxpYW4lMjBKaXUlMjBKaXRzdSUyMHRyYWluaW5nfGVufDF8fHx8MTc2NjIxNzU3OXww&ixlib=rb-4.1.0&q=80&w=1080',
+        image: 'https://socabjj.com/wp-content/uploads/2019/02/LRG_DSC02416.jpg'
       },
       {
         title: 'LIVE ROLLING',
         description: 'Test your no-gi skills with live rolling sessions, developing speed, fluidity, and submission awareness.',
-        image: 'https://images.unsplash.com/photo-1699464676210-48cd0449df42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxCcmF6aWxpYW4lMjBKaXUlMjBKaXRzdSUyMHRyYWluaW5nfGVufDF8fHx8MTc2NjIxNzU3OXww&ixlib=rb-4.1.0&q=80&w=1080',
+        image: 'https://okbjj.com/wp-content/uploads/2024/03/PHOTO-2024-02-12-18-31-56-10-1800x1000.jpg'
       },
     ],
     faqs: [
