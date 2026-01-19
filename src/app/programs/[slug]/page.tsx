@@ -100,22 +100,22 @@ const PROGRAMS = {
       {
         title: 'PARTNER PADWORK',
         description: 'Engage in drills with a partner to practice and perfect striking combinations, enhancing timing and coordination.',
-        image: 'https://images.unsplash.com/photo-1708134028754-5ba43093fedf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtbWElMjB0cmFpbmluZyUyMGd5bXxlbnwxfHx8fDE3Njc1Nzc0OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080',
+        image: 'https://images.unsplash.com/photo-1611816153165-fed23698666d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
       },
       {
         title: 'TECHNIQUE',
         description: 'Learn and refine fundamental and advanced Muay Thai techniques, including punches, kicks, elbows, and knees.',
-        image: 'https://images.unsplash.com/photo-1677184976710-0bb339946023?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWNrYm94aW5nJTIwd29ya291dHxlbnwxfHx8fDE3Njc1Nzc0OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080',
+        image: 'https://images.unsplash.com/photo-1729673517080-44353fa68fe0?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
       },
       {
         title: 'STRENGTH & CONDITIONING',
         description: 'Participate in exercises designed to improve overall fitness, power, and endurance specific to Muay Thai.',
-        image: 'https://images.unsplash.com/photo-1708723636238-e4c384d5d428?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXJ0aWFsJTIwYXJ0cyUyMGd5bXxlbnwxfHx8fDE3Njc1NDIyMDR8MA&ixlib=rb-4.1.0&q=80&w=1080',
+        image: 'https://images.unsplash.com/photo-1637974013743-82656f7c3f49?q=80&w=648&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
       },
       {
         title: 'SPARRING',
         description: 'Controlled sparring for sharpening your tactical edge. From technical drills to competitive sparring rounds under supervision.',
-        image: 'https://images.unsplash.com/photo-1696454411278-a64de1369e83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtdWF5JTIwdGhhaSUyMGZpZ2h0ZXIlMjB0cmFpbmluZ3xlbnwxfHx8fDE3Njc1Nzc0OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080',
+        image: 'https://images.unsplash.com/photo-1601039834205-4e3f1e932f5a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
       },
     ],
     faqs: [
