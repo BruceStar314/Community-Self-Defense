@@ -18,22 +18,22 @@ const PROGRAMS = {
       {
         title: 'STRIKING BASICS',
         description: 'Master fundamental striking techniques including punches, kicks, elbows, and knees from multiple disciplines.',
-        image: 'https://images.unsplash.com/photo-1708134028754-5ba43093fedf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtbWElMjB0cmFpbmluZyUyMGd5bXxlbnwxfHx8fDE3Njc1Nzc0OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080',
+        image: 'https://images.unsplash.com/photo-1708723636238-e4c384d5d428?q=80&w=1317&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
       },
       {
         title: 'GRAPPLING FUNDAMENTALS',
         description: 'Learn takedowns, ground control, and submission techniques combining wrestling and Brazilian Jiu-Jitsu.',
-        image: 'https://images.unsplash.com/photo-1699464676210-48cd0449df42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxCcmF6aWxpYW4lMjBKaXUlMjBKaXRzdSUyMHRyYWluaW5nfGVufDF8fHx8MTc2NjIxNzU3OXww&ixlib=rb-4.1.0&q=80&w=1080',
+        image: 'https://images.unsplash.com/photo-1615117029952-b84f7ce2b955?q=80&w=1282&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
       },
       {
         title: 'WALL WORK',
         description: 'Develop skills specific to MMA competition including cage wrestling, wall walking, and clinch work.',
-        image: 'https://images.unsplash.com/photo-1688141402330-f4ed03f6bbf9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxNTUElMjBjYWdlJTIwZmlnaHRpbmd8ZW58MXx8fHwxNzY2MjE3NTgwfDA&ixlib=rb-4.1.0&q=80&w=1080',
+        image: 'https://images.unsplash.com/photo-1680022702604-292f21514497?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
       },
       {
         title: 'LIVE SPARRING',
         description: 'Put it all together with controlled live rounds, blending striking and grappling in realistic scenarios.',
-        image: 'https://images.unsplash.com/photo-1615117270691-3bc3cb65f2e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3cmVzdGxpbmclMjBncmFwcGxpbmd8ZW58MXx8fHwxNzY2MjE3NTgwfDA&ixlib=rb-4.1.0&q=80&w=1080',
+        image: 'https://images.unsplash.com/photo-1680022546558-550eaf22351e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
       },
     ],
     faqs: [
