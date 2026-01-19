@@ -141,22 +141,22 @@ const PROGRAMS = {
       {
         title: 'BASIC STANCE & GUARD',
         description: 'Master the fundamentals of boxing stance, proper guard position, and footwork foundation.',
-        image: 'https://images.unsplash.com/photo-1570312530820-d0f15f33a4a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxib3hpbmclMjB0cmFpbmluZyUyMGd5bXxlbnwxfHx8fDE3NjYxNDIxMjB8MA&ixlib=rb-4.1.0&q=80&w=1080',
+        image: 'https://images.unsplash.com/photo-1622599511051-16f55a1234d0?q=80&w=736&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
       },
       {
         title: 'PUNCH TECHNIQUES',
         description: 'Learn proper form for jabs, crosses, hooks, and uppercuts with focus on power and precision.',
-        image: 'https://images.unsplash.com/photo-1570312530820-d0f15f33a4a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxib3hpbmclMjBmaXRuZXNzJTIwY2xhc3N8ZW58MXx8fHwxNzY2MDEyMDQyfDA&ixlib=rb-4.1.0&q=80&w=1080',
+        image: 'https://images.unsplash.com/photo-1636302925863-6ad504baaf3c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
       },
       {
         title: 'DEFENSE & HEAD MOVEMENT',
         description: 'Develop defensive skills including slips, rolls, blocks, and parries to avoid and counter punches.',
-        image: 'https://images.unsplash.com/photo-1570312530820-d0f15f33a4a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxib3hpbmclMjB0cmFpbmluZyUyMGd5bXxlbnwxfHx8fDE3NjYxNDIxMjB8MA&ixlib=rb-4.1.0&q=80&w=1080',
+        image: 'https://images.unsplash.com/photo-1636581563884-39569e81cbad?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
       },
       {
         title: 'BAG WORK & SPARRING',
         description: 'Put techniques into practice with heavy bag drills, mitt work, and controlled sparring sessions.',
-        image: 'https://images.unsplash.com/photo-1570312530820-d0f15f33a4a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxib3hpbmclMjBmaXRuZXNzJTIwY2xhc3N8ZW58MXx8fHwxNzY2MDEyMDQyfDA&ixlib=rb-4.1.0&q=80&w=1080',
+        image: 'https://images.unsplash.com/photo-1606335543042-57c525922933?q=80&w=1475&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
       },
     ],
     faqs: [
