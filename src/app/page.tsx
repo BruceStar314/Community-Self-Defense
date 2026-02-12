@@ -148,7 +148,7 @@ export default function App() {
     {
       name: "Myles Moudy",
       specialty: "Kickboxing & MMA",
-      credentials: "Black belt under Joao Assis Over 100 Jiu-jitsu matches Ranked #1 Nationally as a Brown BeltFormer MMA fighter",
+      credentials: "Black belt under Joao Assis Over 100 Jiu-jitsu matches Ranked #1 Nationally as a Brown Belt Former MMA fighter",
       image: mylesImage.src
     },
     {
