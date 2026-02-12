@@ -745,10 +745,7 @@ export default function App() {
             <div>
               <h4 className="mb-4">Connect</h4>
               <ul className="space-y-2 text-gray-400 text-sm">
-                <li>Facebook</li>
                 <li className="hover:text-[hsl(217,63%,47%)]"><a href="https://www.instagram.com/community_self_defense/" target="_blank" rel="noopener noreferrer" >Instagram</a></li>
-                <li>Twitter</li>
-                <li>YouTube</li>
               </ul>
             </div> 
           </div>
