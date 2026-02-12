@@ -18,6 +18,7 @@ import {
   Star,
 } from "lucide-react";
 import { ImageWithFallback } from "../components/backup/ImageWithFallback";
+import { Footer } from "./programs/[slug]/_components/Footer";
 
 // Image paths - using local images from public folder
 const logo = "/images/CSD-logo.png";
@@ -707,53 +708,7 @@ export default function App() {
 
       {/* Footer */}
       <footer className="bg-black text-white py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <div className="flex items-center gap-2 mb-4">
-                <ImageWithFallback src={logo} alt="CSD Logo" width={48} height={48} className="w-12 h-12" />
-                <div>
-                  <div>CSD</div>
-                  <div className="text-xs text-gray-400">Community-Self-Defense</div>
-                </div>
-              </div>
-              <p className="text-gray-400 text-sm">
-                Empowering our community through martial arts training and self-defense education.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="mb-4">Quick Links</h4>
-              <ul className="space-y-2 text-gray-400 text-sm">
-                <li><a href="#classes" className="hover:text-[hsl(217,63%,47%)] transition-colors">Classes</a></li>
-                <li><a href="#trainers" className="hover:text-[hsl(217,63%,47%)] transition-colors">Trainers</a></li>
-                <li><a href="#membership" className="hover:text-[hsl(217,63%,47%)] transition-colors">Membership</a></li>
-                <li><a href="#contact" className="hover:text-[hsl(217,63%,47%)] transition-colors">Contact</a></li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="mb-4">Programs</h4>
-              <ul className="space-y-2 text-gray-400 text-sm">
-                <li>MMA Fundamentals</li>
-                <li>Striking</li>
-                <li>Grappling</li>
-                <li>Self-Defense</li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="mb-4">Connect</h4>
-              <ul className="space-y-2 text-gray-400 text-sm">
-                <li className="hover:text-[hsl(217,63%,47%)]"><a href="https://www.instagram.com/community_self_defense/" target="_blank" rel="noopener noreferrer" >Instagram</a></li>
-              </ul>
-            </div> 
-          </div>
-
-          <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
-            <p>&copy; 2026 Community-Self-Defense. All rights reserved.</p>
-          </div>
-        </div>
+     < Footer />
       </footer>
     </div>
   );
