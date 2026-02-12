@@ -320,7 +320,7 @@ export default function App() {
           <div className="mb-12">
             <h2 className="text-5xl mb-4 text-black">PROGRAMS</h2>
             <p className="text-gray-600 text-lg">
-              We want you to experience the culture that we've created here. If you're ready to diversify your fitness routine and start fighting for yourself.
+              We’re more than a gym — we’re a community for people of every background.
             </p>
           </div>
 
