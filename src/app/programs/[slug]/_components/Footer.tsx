@@ -48,24 +48,24 @@ export function Footer() {
             </h4>
             <ul className="space-y-2 text-gray-400 text-sm">
               <li>
-                <Link href="/programs/mma" className="hover:text-[hsl(217,63%,47%)]">
+                <a href="#classes" className="hover:text-[hsl(217,63%,47%)]">
                   MMA Fundamentals
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/programs/striking" className="hover:text-[hsl(217,63%,47%)]">
+                <a href="#classes" className="hover:text-[hsl(218,63%,47%)]">
                   Striking
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/programs/grappling" className="hover:text-[hsl(217,63%,47%)]">
+                <a href="#classes" className="hover:text-[hsl(219,63%,47%)]">
                   Grappling
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/programs/self-defense" className="hover:text-[hsl(217,63%,47%)]">
+                <a href="#classes" className="hover:text-[hsl(220,63%,47%)]">
                   Self-Defense
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
